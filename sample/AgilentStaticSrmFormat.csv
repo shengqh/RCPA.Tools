@@ -1,0 +1,7 @@
+Compound Name,ISTD?,Qual?,Precursor Ion,MS1 Res,Product Ion,MS2 Res,Dwell,Fragmentor,Collision Energy,Polarity
+Acss2-2_heavy,TRUE,FALSE,937.02,Unit,1320.7,Unit,20,100,33,Positive
+Acss2-2_heavy,TRUE,FALSE,937.02,Unit,519.34,Unit,20,100,49,Positive
+Acss2-2_heavy,TRUE,FALSE,937.02,Unit,365.26,Unit,20,100,41,Positive
+Acss2-2_Light,FALSE,FALSE,933.02,Unit,1312.7,Unit,20,100,33,Positive
+Acss2-2_Light,FALSE,FALSE,933.02,Unit,511.34,Unit,20,100,49,Positive
+Acss2-2_Light,FALSE,FALSE,933.02,Unit,357.26,Unit,20,100,41,Positive

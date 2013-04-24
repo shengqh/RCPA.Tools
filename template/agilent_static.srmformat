@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FileDefinition>
+  <Delimiter>,</Delimiter>
+  <Description>Agilent Static Transition Format</Description>
+  <Item>
+    <Header>Compound Name</Header>
+    <PropertyName>PrecursorFormula</PropertyName>
+    <Required>True</Required>
+    <ValueType>string</ValueType>
+    <Format />
+  </Item>
+  <Item>
+    <Header>ISTD?</Header>
+    <PropertyName>IsHeavy</PropertyName>
+    <Required>False</Required>
+    <ValueType>boolean</ValueType>
+    <Format />
+  </Item>
+  <Item>
+    <Header>Qual?</Header>
+    <PropertyName></PropertyName>
+    <Required>False</Required>
+    <ValueType></ValueType>
+    <Format></Format>
+  </Item>
+  <Item>
+    <Header>Precursor Ion</Header>
+    <PropertyName>PrecursorMZ</PropertyName>
+    <Required>True</Required>
+    <ValueType>double</ValueType>
+    <Format>{0:0.0000}</Format>
+  </Item>
+  <Item>
+    <Header>MS1 Res</Header>
+    <PropertyName></PropertyName>
+    <Required>False</Required>
+    <ValueType></ValueType>
+    <Format></Format>
+  </Item>
+  <Item>
+    <Header>Product Ion</Header>
+    <PropertyName>ProductIon</PropertyName>
+    <Required>True</Required>
+    <ValueType>double</ValueType>
+    <Format>{0:0.0000}</Format>
+  </Item>
+  <Item>
+    <Header>MS2 Res</Header>
+    <PropertyName></PropertyName>
+    <Required>False</Required>
+    <ValueType></ValueType>
+    <Format></Format>
+  </Item>
+  <Item>
+    <Header>Dwell</Header>
+    <PropertyName></PropertyName>
+    <Required>False</Required>
+    <ValueType></ValueType>
+    <Format></Format>
+  </Item>
+  <Item>
+    <Header>Fragmentor</Header>
+    <PropertyName></PropertyName>
+    <Required>False</Required>
+    <ValueType></ValueType>
+    <Format></Format>
+  </Item>
+  <Item>
+    <Header>Collision Energy</Header>
+    <PropertyName></PropertyName>
+    <Required>False</Required>
+    <ValueType></ValueType>
+    <Format></Format>
+  </Item>
+  <Item>
+    <Header>Polarity</Header>
+    <PropertyName></PropertyName>
+    <Required>False</Required>
+    <ValueType></ValueType>
+    <Format></Format>
+  </Item>
+</FileDefinition>

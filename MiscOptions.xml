@@ -1,0 +1,850 @@
+<?xml version="1.0"?>
+<miscSettingsStructure>
+  <DatabaseParseDefinitions>
+    <parseFormat>
+      <formatName>IPI</formatName>
+      <formatID>1001</formatID>
+      <GUInameIndex>1</GUInameIndex>
+      <formatSample>IPI:IPI00022229.1|SWISS-PROT:P04114| => IPI00022229</formatSample>
+      <!--   -->
+      <parseItem>
+        <itemName>accessNumber</itemName>
+        <regularExpression>IPI:([^.|]*)</regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+    </parseFormat>
+
+    <parseFormat>
+      <formatName>NCBI</formatName>
+      <formatID>2001</formatID>
+      <GUInameIndex>2</GUInameIndex>
+      <formatSample>gi|29841477|gb|AAP06509.1| => gi|29841477</formatSample>
+      
+      <!--   -->
+      <parseItem>
+        <itemName>accessNumber</itemName>
+        <regularExpression>((?:REV_){0,1}gi.\d+)</regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+    </parseFormat>
+
+    <parseFormat>
+      <formatName>EBI+NCBI</formatName>
+      <formatID>2002</formatID>
+      <GUInameIndex>3</GUInameIndex>
+      <!--   -->
+      <parseItem>
+        <itemName>accessNumber</itemName>
+        <regularExpression>(IPI\d+|gi.\d+)</regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+    </parseFormat>
+
+    <parseFormat>
+      <formatName>SwissProt1</formatName>
+      <formatID>3001</formatID>
+      <GUInameIndex>4</GUInameIndex>
+      <formatSample>Q91G88 Putative KilA-N domain-containing protein => Q91G88; sp|Q197F8|002R_IIV3 ==> Q197F8 ; tr|G3V6P7|G3V6P7_RAT => G3V6P7</formatSample>
+
+      <!--   -->
+      <parseItem>
+        <itemName>accessNumber</itemName>
+        <regularExpression>(?:^>){0,1}(?:sp\|){0,1}(?:tr\|){0,1}([^|\s]+)</regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+    </parseFormat>
+
+    <parseFormat>
+      <formatName>SwissProt2</formatName>
+      <formatID>3002</formatID>
+      <GUInameIndex>5</GUInameIndex>
+      <formatSample>P15711|104K_THEPA ==> 104K_THEPA ; sp|Q197F8|002R_IIV3 ==> 002R_IIV3</formatSample>
+      <!--   -->
+      <parseItem>
+        <itemName>accessNumber</itemName>
+        <regularExpression>\S*\|(\S+)</regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+    </parseFormat>
+
+    <parseFormat>
+      <formatName>SwissProt3</formatName>
+      <formatID>3003</formatID>
+      <GUInameIndex>6</GUInameIndex>
+      <formatSample>sp|Q197F8|002R_IIV3 ==> Q197F8|002R_IIV3 ; Q197F8|002R_IIV3 => Q197F8|002R_IIV3</formatSample>
+      <!--   -->
+      <parseItem>
+        <itemName>accessNumber</itemName>
+        <regularExpression>(?:sp\|){0,1}(?:tr\|){0,1}(\S+)</regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+    </parseFormat>
+
+    <parseFormat>
+      <formatName>SEQUEST</formatName>
+      <formatID>4001</formatID>
+      <GUInameIndex>10</GUInameIndex>
+      <formatSample>Keep first 20 character for each protein entry</formatSample>
+      <!--   -->
+      <parseItem>
+        <itemName>accessNumber</itemName>
+        <regularExpression>(\S{1,20})</regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+    </parseFormat>
+
+  </DatabaseParseDefinitions>
+
+  <TITLElineParseDefinitions>
+    <!--TurboRAW2MGF, Raw+Cmpd format-->
+    <parseFormat>
+      <formatName>TurboRAW2MGF, Raw+Cmpd</formatName>
+      <formatID>33001</formatID>
+      <GUInameIndex>1</GUInameIndex>
+      <formatSample>20040922_HPPP_Flow_01, Cmpd 2, +MSn(654.53), 0.04 min</formatSample>
+      <regex>.+,\s+Cmpd\s\d+,\s+\+MSn</regex>
+      <!--   -->
+      <parseItem>
+        <itemName>retentionTime</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>experiment</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>cycles</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>rawFile</itemName>
+        <regularExpression>(.+?),\s*Cmpd</regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>scanNumber</itemName>
+        <regularExpression>Cmpd\s*(\d+)\s*,</regularExpression>
+        <slope>1.0</slope>
+        <offset>0.0</offset>
+      </parseItem>
+      <!--   -->
+    </parseFormat>
+
+    <!--TurboRAW2MGF, dta format-->
+    <parseFormat>
+      <formatName>TurboRAW2MGF, DTA format</formatName>
+      <formatID>33003</formatID>
+      <GUInameIndex>3</GUInameIndex>
+      <formatSample>20040922_HPPP_Flow_01.200.201.1.dta</formatSample>
+      <regex>\d+\.\d+\.\d+\.[dta|out]</regex>
+      <!--   -->
+      <parseItem>
+        <itemName>retentionTime</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>experiment</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>cycles</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>rawFile</itemName>
+        <regularExpression>(.+)\.\d+\.\d+\.\d{1,2}(?:(?:.dta|.DTA)|$)</regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>scanNumber</itemName>
+        <regularExpression>.+\.(\d+)\.(\d+)\.\d{1,2}(?:(?:.dta|.DTA)|$)</regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+    </parseFormat>
+
+    <!--MaxQuant-->
+    <parseFormat>
+      <formatName>MaxQuant</formatName>
+      <formatID>33102</formatID>
+      <GUInameIndex>100</GUInameIndex>
+      <formatSample>RawFile: FIT_HPPP_Bound_060622_01.raw Index: 3 _nix_</formatSample>
+      <regex>RawFile.+(?:FinneganScanNumber|Index)</regex>
+      <parseItem>
+        <itemName>rawFile</itemName>
+        <regularExpression>RawFile:\s(.+?)(?:.raw|\sFinneganScanNumber|\sIndex)</regularExpression>
+        <slope>1.0</slope>
+        <offset>0.0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>scanNumber</itemName>
+        <regularExpression>(?:FinneganScanNumber|Index):\s(\d+)</regularExpression>
+        <slope>1.0</slope>
+        <offset>0.0</offset>
+      </parseItem>
+      <!--   -->
+    </parseFormat>
+    
+    <!--Agilent-->
+    <parseFormat>
+      <formatName>Agilent mzData</formatName>
+      <formatID>33103</formatID>
+      <GUInameIndex>101</GUInameIndex>
+      <formatSample>spectrumId=3056 Polarity=Positive ScanMode=ProductIon TimeInMinutes=18.482 acqNumber=1108919</formatSample>
+      <regex>spectrumId</regex>
+      <!--   -->
+      <parseItem>
+        <itemName>retentionTime</itemName>
+        <regularExpression>TimeInMinutes=([.\d]+)</regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>experiment</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>cycles</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>rawFile</itemName>
+        <regularExpression></regularExpression>
+        <slope>1.0</slope>
+        <offset>0.0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>scanNumber</itemName>
+        <regularExpression>spectrumId=(\d+)</regularExpression>
+        <slope>1.0</slope>
+        <offset>0.0</offset>
+      </parseItem>
+      <!--   -->
+    </parseFormat>
+
+    <!--AB-->
+    <parseFormat>
+      <formatName>AB_SCIEX_MS­_Converter</formatName>
+      <formatID>33200</formatID>
+      <GUInameIndex>200</GUInameIndex>
+      <formatSample>Locus:1.1.1.584.2</formatSample>
+      <regex>Locus:</regex>
+      <!--   -->
+      <parseItem>
+        <itemName>retentionTime</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>experiment</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>cycles</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>rawFile</itemName>
+        <regularExpression></regularExpression>
+        <slope>1.0</slope>
+        <offset>0.0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>scanNumber</itemName>
+        <regularExpression>Locus:\d+\.\d+\.\d+\.(\d+)</regularExpression>
+        <slope>1.0</slope>
+        <offset>0.0</offset>
+      </parseItem>
+      <!--   -->
+    </parseFormat>
+
+
+    <parseFormat>
+      <formatName>Thermo proteome discoverer</formatName>
+      <formatID>33500</formatID>
+      <GUInameIndex>4</GUInameIndex>
+      <formatSample>File16 Spectrum5079 scans: 6208</formatSample>
+      <regex>Spectrum.+scans</regex>
+      <!--   -->
+      <parseItem>
+        <itemName>retentionTime</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>experiment</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>cycles</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>rawFile</itemName>
+        <regularExpression></regularExpression>
+        <slope>1.0</slope>
+        <offset>0.0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>scanNumber</itemName>
+        <regularExpression>scans.+?(\d+)</regularExpression>
+        <slope>1.0</slope>
+        <offset>0.0</offset>
+      </parseItem>
+      <!--   -->
+    </parseFormat>
+
+    <!--TurboRaw To mzXML-->
+    <parseFormat>
+      <formatName>TurboRaw To mzXML</formatName>
+      <formatID>33101</formatID>
+      <GUInameIndex>4</GUInameIndex>
+      <regex>RAW.mzXml</regex>
+      <!--   -->
+      <parseItem>
+        <itemName>retentionTime</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>experiment</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>cycles</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>rawFile</itemName>
+        <regularExpression>(.+).RAW.mzXml</regularExpression>
+        <slope>1.0</slope>
+        <offset>0.0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>scanNumber</itemName>
+        <regularExpression>scan\s*(\d+)\s</regularExpression>
+        <slope>1.0</slope>
+        <offset>0.0</offset>
+      </parseItem>
+      <!--   -->
+    </parseFormat>
+
+    <!--Mascot.dll 1.0 or older DTASC-->
+    <parseFormat>
+      <!--  Classic MSQuant format. For historical reasons equal to Analyst QS 1.0 Mascot.dll     -->
+      <!--  output. Note: the content of <itemName> (for each <parseItem>) is one of 5 magical     -->
+      <!--  names;  "retentionTime", "experiment", "cycles", "rawFile" or "scanNumber".    -->
+      <formatName>Mascot.dll 1.0 or older DTASC</formatName>
+      <formatID>23001</formatID>
+      <GUInameIndex>50</GUInameIndex>
+      <regex>Elution from:</regex>
+      <!--                                                            -->
+      <parseItem>
+        <!--  Must use white space matching (not space) as HTML formatting may break lines;     -->
+        <!--  this depends on the Mascot version.    -->
+        <itemName>retentionTime</itemName>
+        <regularExpression>Elution from:\s+([.0-9]+)\s+to</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  This is QSTAR/Sciex/Analyst specific. Experiment number (in Mascot.dll output)     -->
+        <!--  starts at 0 for QS 1.0 and at 1 for QS 1.1 and later. The lowest number is for     -->
+        <!--  the MS spectrum and higher numbers are for one or more fragment spectra (MS/MS).     -->
+        <!--  As QS 1.0 is the base for this program the offset value must be set to -1 for     -->
+        <!--  QS 1.1 or later.    -->
+        <itemName>experiment</itemName>
+        <regularExpression>experiment:\s+([0-9]+)\s+cycles</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  E.g. "<BR>" is right after the number.    -->
+        <itemName>cycles</itemName>
+        <regularExpression>cycles:\s+([0-9]+)[^0-9]+</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  This is for the old way (so older files can still be parsed) For combined files     -->
+        <!--  the raw file name is stored  in the period field - MSQuant classic. It assumes     -->
+        <!--  the next field is 'experiment'.    -->
+        <itemName>rawFile</itemName>
+        <regularExpression>period:\s+(\S+)\s+ex</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  OK if specified as something that never match. Then the retention time will     -->
+        <!--  be used instead. Conversely: if it matches then it overrides; the value will     -->
+        <!--  be used instead of the specified retention time.    -->
+        <itemName>scanNumber</itemName>
+        <regularExpression>FinneganScanNumber:\D*(\d+)\D+</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+    </parseFormat>
+
+    <!--DTASuperCharge, v1.19 and later (LTQ-FT)-->
+    <parseFormat>
+      <!--  For use with the fixed version of DTASC, outputs trailing space in TITLE lines...     -->
+      <!--  Note: the content of <itemName> (for each <parseItem>) is one of 5 magical names;     -->
+      <!--   "retentionTime", "experiment", "cycles", "rawFile" or "scanNumber".    -->
+      <formatName>DTASuperCharge, v1.19 and later (LTQ-FT)</formatName>
+      <formatID>23002</formatID>
+      <GUInameIndex>51</GUInameIndex>
+      <!--                                                            -->
+      <parseItem>
+        <!--  Must use white space matching (not space) as HTML formatting may break lines;     -->
+        <!--  this depends on the Mascot version.    -->
+        <itemName>retentionTime</itemName>
+        <regularExpression>Elution from:\s+([.0-9]+)\s+to</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  This is QSTAR/Sciex/Analyst specific. Experiment number (in Mascot.dll output)     -->
+        <!--  starts at 0 for QS 1.0 and at 1 for QS 1.1 and later. The lowest number is for     -->
+        <!--  the MS spectrum and higher numbers are for one or more fragment spectra (MS/MS).     -->
+        <!--  As QS 1.0 is the base for this program the offset value must be set to -1 for     -->
+        <!--  QS 1.1 or later.    -->
+        <itemName>experiment</itemName>
+        <regularExpression>experiment:\s+([0-9]+)\s+cycles</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  E.g. "<BR>" is right after the number.    -->
+        <itemName>cycles</itemName>
+        <regularExpression>cycles:\s+([0-9]+)[^0-9]+</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  This is for the newer version of DTASuperCharge (that output its own field for     -->
+        <!--  the raw file name).    -->
+        <itemName>rawFile</itemName>
+        <regularExpression>rawFile:\s+(\S+)\s+</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  OK if specified as something that never match. Then the retention time will     -->
+        <!--  be used instead. Conversely: if it matches then it overrides; the value will     -->
+        <!--  be used instead of the specified retention time.    -->
+        <itemName>scanNumber</itemName>
+        <regularExpression>FinneganScanNumber:\D*(\d+)\D+</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+    </parseFormat>
+
+    <!--Newer DTASuperCharge, up to v1.18 (LTQ-FT)-->
+    <parseFormat>
+      <!--  For use with the broken versions of DTASC that do not output trailing space     -->
+      <!--  after the "rawFile" field (in TITLE lines). Note: the content of <itemName>     -->
+      <!--  (for each <parseItem>) is one of 5 magical names;  "retentionTime", "experiment",     -->
+      <!--  "cycles", "rawFile" or "scanNumber".    -->
+      <formatName>Newer DTASuperCharge, up to v1.18 (LTQ-FT)</formatName>
+      <formatID>23003</formatID>
+      <GUInameIndex>52</GUInameIndex>
+      <!--                                                            -->
+      <parseItem>
+        <!--  Must use white space matching (not space) as HTML formatting may break lines;     -->
+        <!--  this depends on the Mascot version.    -->
+        <itemName>retentionTime</itemName>
+        <regularExpression>Elution from:\s+([.0-9]+)\s+to</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  This is QSTAR/Sciex/Analyst specific. Experiment number (in Mascot.dll output)     -->
+        <!--  starts at 0 for QS 1.0 and at 1 for QS 1.1 and later. The lowest number is for     -->
+        <!--  the MS spectrum and higher numbers are for one or more fragment spectra (MS/MS).     -->
+        <!--  As QS 1.0 is the base for this program the offset value must be set to -1 for     -->
+        <!--  QS 1.1 or later.    -->
+        <itemName>experiment</itemName>
+        <regularExpression>experiment:\s+([0-9]+)\s+cycles</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  E.g. "<BR>" is right after the number.    -->
+        <itemName>cycles</itemName>
+        <regularExpression>cycles:\s+([0-9]+)[^0-9]+</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  This is for the newer version of DTASuperCharge (that output its own field for     -->
+        <!--  the raw file name).    -->
+        <itemName>rawFile</itemName>
+        <regularExpression>rawFile:\s+(\S+)&lt;BR&gt;</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  OK if specified as something that never match. Then the retention time will     -->
+        <!--  be used instead. Conversely: if it matches then it overrides; the value will     -->
+        <!--  be used instead of the specified retention time.    -->
+        <itemName>scanNumber</itemName>
+        <regularExpression>FinneganScanNumber:\D*(\d+)\D+</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+    </parseFormat>
+
+    <!--Mascot.dll 1.1/2.0 (single raw file)-->
+    <parseFormat>
+      <!--  New Analyst QS 1.1 or later Mascot.dll format. Including a different base for     -->
+      <!--  Experimentnumber (one lower compared to QS 1.0). Note: the content of <itemName>     -->
+      <!--  (for each <parseItem>) is one of 5 magical names;  "retentionTime", "experiment",     -->
+      <!--  "cycles", "rawFile" or "scanNumber".    -->
+      <formatName>Mascot.dll 1.1/2.0 (single raw file)</formatName>
+      <formatID>23007</formatID>
+      <GUInameIndex>53</GUInameIndex>
+      <!--                                                            -->
+      <parseItem>
+        <!--  Must use white space matching (not space) as HTML formatting may break lines;     -->
+        <!--  this depends on the Mascot version.    -->
+        <itemName>retentionTime</itemName>
+        <regularExpression>Elution:\s+([0-9\.]+)\s+\S+</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  This is QSTAR/Sciex/Analyst specific. Experiment number (in Mascot.dll output)     -->
+        <!--  starts at 0 for QS 1.0 and at 1 for QS 1.1 and later. The lowest number is for     -->
+        <!--  the MS spectrum and higher numbers are for one or more fragment spectra (MS/MS).     -->
+        <!--  As QS 1.0 is the base for this program the offset value must be set to -1 for     -->
+        <!--  QS 1.1 or later.    -->
+        <itemName>experiment</itemName>
+        <regularExpression>Experiment\s+([0-9]+)\)</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>-1</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  E.g. "<BR>" is right after the number.    -->
+        <itemName>cycles</itemName>
+        <regularExpression>Cycle\(s\):\s+([0-9]+)[^0-9]+</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  For combined files - a tool is needed. Or the new raw file field??     -->
+        <itemName>rawFile</itemName>
+        <regularExpression>Period:\s+(\S+),</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  OK if specified as something that never match. Then the retention time will     -->
+        <!--  be used instead. Conversely: if it matches then it overrides; the value will     -->
+        <!--  be used instead of the specified retention time..    -->
+        <itemName>scanNumber</itemName>
+        <regularExpression>ZZZZCycle\(s\):\D*(\d+)\D+</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+    </parseFormat>
+
+    <!--Mascot.dll 1.1/2.0 (multiple raw files)-->
+    <parseFormat>
+      <!--  Understands the new raw file field in Analyst QS 1.1 or later Mascot.dll format.     -->
+      <!--  Including a different base for Experimentnumber (one lower compared to QS 1.0).     -->
+      <!--  Note: the content of <itemName> (for each <parseItem>) is one of 5 magical names;     -->
+      <!--   "retentionTime", "experiment", "cycles", "rawFile" or "scanNumber".    -->
+      <formatName>Mascot.dll 1.1/2.0 (multiple raw files)</formatName>
+      <formatID>23008</formatID>
+      <GUInameIndex>54</GUInameIndex>
+      <!--                                                            -->
+      <parseItem>
+        <!--  Must use white space matching (not space) as HTML formatting may break lines;     -->
+        <!--  this depends on the Mascot version.    -->
+        <itemName>retentionTime</itemName>
+        <regularExpression>Elution:\s+([0-9\.]+)\s+\S+</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  This is QSTAR/Sciex/Analyst specific. Experiment number (in Mascot.dll output)     -->
+        <!--  starts at 0 for QS 1.0 and at 1 for QS 1.1 and later. The lowest number is for     -->
+        <!--  the MS spectrum and higher numbers are for one or more fragment spectra (MS/MS).     -->
+        <!--  As QS 1.0 is the base for this program the offset value must be set to -1 for     -->
+        <!--  QS 1.1 or later.    -->
+        <itemName>experiment</itemName>
+        <regularExpression>Experiment\s+([0-9]+)\)</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>-1</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  E.g. "<BR>" is right after the number.    -->
+        <itemName>cycles</itemName>
+        <regularExpression>Cycle\(s\):\s+([0-9]+)[^0-9]+</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  This is for the multiple files, using the new field in QS 1.1.    -->
+        <itemName>rawFile</itemName>
+        <regularExpression>File:\s+(\S+),</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+      <parseItem>
+        <!--  OK if specified as something that never match. Then the retention time will     -->
+        <!--  be used instead. Conversely: if it matches then it overrides; the value will     -->
+        <!--  be used instead of the specified retention time..    -->
+        <itemName>scanNumber</itemName>
+        <regularExpression>ZZZZCycle\(s\):\D*(\d+)\D+</regularExpression>
+        <!--                                                            -->
+        <!--  Fields slope and offset are for a linear transformation from the input in the     -->
+        <!--  input to value inside the program. E.g. to change a value from seconds to minutes     -->
+        <!--  or offset a field by -1    -->
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--                                                            -->
+    </parseFormat>
+    
+    <!--TurboRAW2MGF, Cmpd format-->
+    <parseFormat>
+      <formatName>TurboRAW2MGF, Cmpd</formatName>
+      <formatID>33002</formatID>
+      <GUInameIndex>2</GUInameIndex>
+      <formatSample>Cmpd 2, +MSn(654.53), 0.04 min</formatSample>
+      <regex>^Cmpd\s\d+,\s+\+MSn</regex>
+      <!--   -->
+      <parseItem>
+        <itemName>retentionTime</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>experiment</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>cycles</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>rawFile</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>scanNumber</itemName>
+        <regularExpression>Cmpd\s*(\d+)\s*,</regularExpression>
+        <slope>1.0</slope>
+        <offset>0.0</offset>
+      </parseItem>
+      <!--   -->
+    </parseFormat>
+  </TITLElineParseDefinitions>
+
+  <DatasetDefinitions>
+    <Dataset>
+      <name>MASCOT</name>
+      <assembly></assembly>
+      <class>RCPA.Proteomics.Summary.Uniform.MascotDatasetFactory</class>
+    </Dataset>
+  </DatasetDefinitions>
+  
+</miscSettingsStructure>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FileDefinition>
+  <Delimiter>,</Delimiter>
+  <Description>ATAQS Transition Format</Description>
+  <Item>
+    <Header>Protein</Header>
+    <PropertyName>ObjectName</PropertyName>
+    <Required>False</Required>
+    <ValueType>string</ValueType>
+    <Format />
+  </Item>
+  <Item>
+    <Header>Compound Name</Header>
+    <PropertyName>PrecursorFormula</PropertyName>
+    <Required>True</Required>
+    <ValueType>string</ValueType>
+    <Format />
+  </Item>
+  <Item>
+    <Header>PrecursorCharge</Header>
+    <PropertyName>PrecursorCharge</PropertyName>
+    <Required>False</Required>
+    <ValueType>integer</ValueType>
+    <Format />
+  </Item>
+  <Item>
+    <Header>Precursor Ion</Header>
+    <PropertyName>PrecursorMZ</PropertyName>
+    <Required>True</Required>
+    <ValueType>double</ValueType>
+    <Format>{0:0.0000}</Format>
+  </Item>
+  <Item>
+    <Header>ProductCharge</Header>
+    <PropertyName></PropertyName>
+    <Required>False</Required>
+    <ValueType></ValueType>
+    <Format></Format>
+  </Item>
+  <Item>
+    <Header>Product Ion</Header>
+    <PropertyName>ProductIon</PropertyName>
+    <Required>True</Required>
+    <ValueType>double</ValueType>
+    <Format>{0:0.0000}</Format>
+  </Item>
+  <Item>
+    <Header>IonType</Header>
+    <PropertyName>IonType</PropertyName>
+    <Required>False</Required>
+    <ValueType>string</ValueType>
+    <Format />
+  </Item>
+  <Item>
+    <Header>IonIndex</Header>
+    <PropertyName>IonIndex</PropertyName>
+    <Required>False</Required>
+    <ValueType>integer</ValueType>
+    <Format />
+  </Item>
+  <Item>
+    <Header>Ret Time (min)</Header>
+    <PropertyName>ExpectCenterRetentionTime</PropertyName>
+    <Required>False</Required>
+    <ValueType>double</ValueType>
+    <Format>{0:0.00}</Format>
+  </Item>
+  <Item>
+    <Header>Collision Energy</Header>
+    <PropertyName></PropertyName>
+    <Required>False</Required>
+    <ValueType></ValueType>
+    <Format></Format>
+  </Item>
+  <Item>
+    <Header>Isotopic</Header>
+    <PropertyName></PropertyName>
+    <Required>False</Required>
+    <ValueType></ValueType>
+    <Format></Format>
+  </Item>
+</FileDefinition>

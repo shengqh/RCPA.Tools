@@ -1,0 +1,7 @@
+Compound Name,ISTD?,Qual?,Precursor Ion,MS1 Res,Product Ion,MS2 Res,Fragmentor,Collision Energy,Ret Time (min),Delta Ret Time,Polarity
+Aco2-1_heavy,TRUE,FALSE,499.76,Unit,784.42,Unit,100,13,27.5,10,Positive
+Aco2-1_heavy,TRUE,FALSE,499.76,Unit,685.35,Unit,100,13,27.5,10,Positive
+Aco2-1_heavy,TRUE,FALSE,499.76,Unit,598.32,Unit,100,13,27.5,10,Positive
+Acadvl-1_light,FALSE,FALSE,482.9,Unit,810.43,Unit,100,13,35.6,10,Positive
+Acadvl-1_light,FALSE,FALSE,482.9,Unit,623.8,Unit,100,9,35.6,10,Positive
+Acadvl-1_light,FALSE,FALSE,482.9,Unit,405.72,Unit,100,13,35.6,10,Positive
