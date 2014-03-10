@@ -750,4 +750,4 @@ New feature: Convert identified result(noredundant file) to dtaselect. It is com
 
 2008/11/10
 Fixed : error when parsing modification of mascot dat file
-==========
+
