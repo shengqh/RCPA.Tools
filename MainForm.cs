@@ -6,6 +6,7 @@ using RCPA.Proteomics.Mascot;
 using RCPA.Proteomics.Quantification;
 using RCPA.Proteomics.Quantification.Labelfree;
 using RCPA.Proteomics.Quantification.SILAC;
+using RCPA.Proteomics.Raw;
 using RCPA.Proteomics.Sequest.Format;
 using RCPA.Tools;
 using RCPA.Tools.Database;
@@ -18,7 +19,6 @@ using RCPA.Tools.Misc;
 using RCPA.Tools.Modification;
 using RCPA.Tools.Quantification;
 using RCPA.Tools.Quantification.Lipid;
-using RCPA.Tools.Quantification.O18;
 using RCPA.Tools.Quantification.SmallMolecule;
 using RCPA.Tools.Raw;
 using RCPA.Tools.Sequest;
@@ -36,12 +36,14 @@ using RCPA.Proteomics.Quantification.ITraq;
 using RCPA.Proteomics.Image;
 using RCPA.Proteomics.Summary.Uniform;
 using RCPA.Proteomics.Statistic;
+using RCPA.Proteomics.Quantification.O18;
+using RCPA;
 
 namespace ProteomicsTools
 {
   public partial class MainForm : RCPA.Gui.Command.CommandForm
   {
-    public static readonly string version = "3.3.9";
+    public static readonly string version = RcpaToolsAssembly.Version;
 
     public static bool PublishVersion { get; set; }
 
@@ -49,7 +51,7 @@ namespace ProteomicsTools
     {
       InitializeComponent();
 
-      this.Text = Constants.GetSQHTitle("Proteomics Tool Suite", version);
+      this.Text = Constants.GetSQHTitle(RcpaToolsAssembly.Title, version);
 
       //Summary
       AddCommand(new UniformBuildSummaryUI.Command());
@@ -135,16 +137,17 @@ namespace ProteomicsTools
 
       //Quantification
       AddCommand(new O18QuantificationFileProcessorUI.Command());
-      AddCommand(new O18QuantificationUserProcessorUI.Command());
+      //AddCommand(new O18QuantificationUserProcessorUI.Command());
       AddCommand(new O18QuantificationSummaryViewerUI.Command());
 
       AddCommand(new ToolCommandSeparator(MenuCommandType.Quantification));
 
       AddCommand(new SilacQuantificationProteinFileProcessorUI.Command());
       AddCommand(new SilacQuantificationSummaryViewerUI.Command());
-      AddCommand(new SilacResultSplitterUI.Command());
-      AddCommand(new ExtendSilacQuantificationProteinFileProcessorUI.Command());
-      AddCommand(new ExtendSilacQuantificationSummaryViewerUI.Command());
+      //AddCommand(new SilacResultSplitterUI.Command());
+      //AddCommand(new ExtendSilacQuantificationProteinFileProcessorUI.Command());
+      //AddCommand(new ExtendSilacQuantificationSummaryViewerUI.Command());
+
       AddCommand(new ProteinLabelFreeQuantificationBuilderUI.Command());
       AddCommand(new ProteinChromotographProcessorUI.Command());
       AddCommand(new ToolCommandSeparator(MenuCommandType.Quantification));
@@ -287,6 +290,12 @@ namespace ProteomicsTools
       //20110221, 1.0.1
       AddCommand(new MaxQuantSiteToPeptideProcessorUI.Command());
       AddCommand(new MaxQuantEvidenceToPeptideProcessorUI.Command());
+
+      //20131113
+      AddCommand(new RawScanParentChildDistillerUI.Command());
+
+      //Setup
+      AddCommand(new ExternalProgramConfigUI.Command());
 
       //Help
       AddCommand(new HelpCommand());

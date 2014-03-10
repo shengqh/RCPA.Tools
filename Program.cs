@@ -21,6 +21,7 @@ namespace ProteomicsTools
       Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
       //Application.Run(new IdentifiedPeptideValidatatorUI());
       Application.Run(new MainForm());
+      Console.WriteLine();
     }
   }
 }

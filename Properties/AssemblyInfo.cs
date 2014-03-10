@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ProteomicsTools")]
+[assembly: AssemblyTitle(RcpaToolsAssembly.Title)]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Research Center for Proteome Analysis, CAS, China")]
-[assembly: AssemblyProduct("ProteomicsTools")]
-[assembly: AssemblyCopyright("Copyright ©  2006-2012")]
+[assembly: AssemblyCompany(RcpaToolsAssembly.Company)]
+[assembly: AssemblyProduct(RcpaToolsAssembly.Title)]
+[assembly: AssemblyCopyright(RcpaToolsAssembly.Copyright)]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("3.3.6.0")]
-[assembly: AssemblyFileVersion("3.3.6.0")]
+[assembly: AssemblyVersion(RcpaToolsAssembly.Version)]
+[assembly: AssemblyFileVersion(RcpaToolsAssembly.Version)]

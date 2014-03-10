@@ -2,6 +2,18 @@ IMPORTANT : MSFileReader library can be downloaded from : http://sjsupport.therm
 IMPORTANT : .NET Platform 4.0 is needed since Version 2.9.2: http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=17718
 Citation: Sheng, Q., et al. (2012) BuildSummary: using a group-based approach to improve the sensitivity of peptide/protein identification in shotgun proteomics, J. Proteome Res., 11, 1494-1502.
 
+2014/01/15 Version 3.4.7
+Enhanced: SILAC quantification summary viewer.
+
+2014/01/08 Version 3.4.6
+Enhanced: SILAC quantification summary viewer.
+
+2014/01/07 Version 3.4.5
+Enhanced: O18 quantification summary viewer.
+
+2013/01/02 Version 3.4.3
+Enhanced: SILAC/O18 quantification summary viewer.
+
 2013/01/02 Version 3.3.9
 Enhanced: Compatible with some thermo raw file with bad scan which cannot be read out. A xxx.baddatascan will be generated once such scans are found and those scans will be ignored in some tools, currently in SILAC quantification tools.
 
