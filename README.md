@@ -1,5 +1,10 @@
 ProteomicsTools Software Suite
 ==========
+Installation
+
+==========
+Changes
+==========
 IMPORTANT : MSFileReader library can be downloaded from : http://sjsupport.thermofinnigan.com/public/detail.asp?id=703
 IMPORTANT : .NET Platform 4.0 is needed since Version 2.9.2: http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=17718
 Citation: Sheng, Q., et al. (2012) BuildSummary: using a group-based approach to improve the sensitivity of peptide/protein identification in shotgun proteomics, J. Proteome Res., 11, 1494-1502.
