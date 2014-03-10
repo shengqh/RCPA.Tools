@@ -1,13 +1,32 @@
 ProteomicsTools Software Suite
-==========
-Installation
+==============================
+* [Introduction](#Introduction)
+* [Download and install](#download)
+* [Citation](#Citation)
+* [Changes](#changes)
 
-==========
-Changes
-==========
-IMPORTANT : MSFileReader library can be downloaded from : http://sjsupport.thermofinnigan.com/public/detail.asp?id=703
-IMPORTANT : .NET Platform 4.0 is needed since Version 2.9.2: http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=17718
-Citation: Sheng, Q., et al. (2012) BuildSummary: using a group-based approach to improve the sensitivity of peptide/protein identification in shotgun proteomics, J. Proteome Res., 11, 1494-1502.
+<a name="Introduction"/>
+# Introduction #
+ProteomicsTools software suite contains a bunch of tools used in proteomics research, from identification result parsing to quantification, modification, et. al.   
+
+<a name="download"/>
+# Download and install #
+You can download the execute software from [RCPA.Tools](https://github.com/shengqh/RCPA.Tools/releases) or download following sources and compile them in Visual Studio:
+[SQH.Lib](https://github.com/shengqh/SQH.Lib/)
+[RCPA.Core](https://github.com/shengqh/RCPA.Core/)
+[RCPA.Proteomics](https://github.com/shengqh/RCPA.Proteomics/)
+[RCPA.Tools](https://github.com/shengqh/RCPA.Tools/)
+
+Two library are required for executing the software:	
+* [MSFileReader library](http://sjsupport.thermofinnigan.com/public/detail.asp?id=703)
+* [dotNET Platform 4.0] (http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=17718)
+
+<a name="Citation"/>
+# Citation #
+* Sheng, Q., et al. (2012) BuildSummary: using a group-based approach to improve the sensitivity of peptide/protein identification in shotgun proteomics, J. Proteome Res., 11, 1494-1502.
+
+<a name="Changes"/>
+# Changes #
 
 2014/02/28 Version 3.4.9
 Enhanced: O18 quantification summary viewer.
@@ -731,3 +750,4 @@ New feature: Convert identified result(noredundant file) to dtaselect. It is com
 
 2008/11/10
 Fixed : error when parsing modification of mascot dat file
+==========
