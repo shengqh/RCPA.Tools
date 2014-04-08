@@ -1,12 +1,14 @@
 ProteomicsTools Software Suite
 ==============================
 * [Introduction](#Introduction)
-* [Download and install](#download)
+* [Prerequisites](#Prerequisites)
+* [Installation](#Installation)
 * [Citation](#Citation)
 * [Changes](#changes)
 
 <a name="Introduction"/>
-# Introduction #
+#Introduction
+
 ProteomicsTools software suite contains a bunch of tools used in proteomics research, from identification result parsing to quantification, modification, et. al.
 
 Currently, there are three software with full documents in the [wiki](Home):
@@ -15,17 +17,23 @@ Currently, there are three software with full documents in the [wiki](Home):
 - [SRMBuilder](SRMBuilder)
 - [O18Quant](O18Quant)
  
-<a name="download"/>
-# Download and install #
-You can download the execute software from [RCPA.Tools](https://github.com/shengqh/RCPA.Tools/releases) or download following sources and compile them in Visual Studio:
-[SQH.Lib](https://github.com/shengqh/SQH.Lib/)
-[RCPA.Core](https://github.com/shengqh/RCPA.Core/)
-[RCPA.Proteomics](https://github.com/shengqh/RCPA.Proteomics/)
-[RCPA.Tools](https://github.com/shengqh/RCPA.Tools/)
-
+#Prerequisites
 Two libraries are required for executing the software:	
 - [MSFileReader library](http://sjsupport.thermofinnigan.com/public/detail.asp?id=703)
 - [dotNET Platform 4.0] (http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=17718)
+
+<a name="Installation"/>
+#Installation
+###Binary File
+Both 64bit version and 32bit version are provided in [github](https://github.com/shengqh/RCPA.Tools/releases). Download the file and decompress it to any folder you want, run ProteomicsTools.exe and have fun.
+
+###Source
+The c# source code is also provided at following projects. Visual Studio 2012 is recommended for compilation.
+
+- [SQH.Lib](https://github.com/shengqh/SQH.Lib/)
+- [RCPA.Core](https://github.com/shengqh/RCPA.Core/)
+- [RCPA.Proteomics](https://github.com/shengqh/RCPA.Proteomics/)
+- [RCPA.Tools](https://github.com/shengqh/RCPA.Tools/)
 
 <a name="Citation"/>
 # Citation #
