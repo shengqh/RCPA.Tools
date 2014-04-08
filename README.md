@@ -14,7 +14,7 @@ ProteomicsTools software suite contains a bunch of tools used in proteomics rese
 
 Currently, there are three major softwares with full documents:
 <a name="BuildSummary">
-* [[BuildSummary](wiki/BuildSummary)] :
+* [BuildSummary](https://github.com/shengqh/RCPA.Tools/wiki/BuildSummary) :
 The target-decoy database search strategy is widely accepted as a standard method for estimating the false discovery rate (FDR) of peptide identification, based on which peptide-spectrum matches (PSMs) from the target database are filtered. To improve the sensitivity of protein identification given a fixed accuracy (frequently defined by a protein FDR threshold), a post-processing procedure is often used that integrates results from different peptide search engines that had assayed the same dataset. In this work, we show that PSMs that are grouped by the precursor charge, the number of missed internal cleavage sites, the modification state, the numbers of protease termini and the proteins grouped by their unique peptide count should be filtered separately according to the given FDR. We also develop an iterative procedure to filter the PSMs and proteins simultaneously, according to the given FDR. Finally, we present a general framework to integrate the results from different peptide search engines using the same FDR threshold. Our method was tested with several shotgun proteomics datasets that were acquired by multiple LC/MS instruments from two different biological samples. The results showed a satisfactory performance. 
 
 <a name="SRMBuilder">
