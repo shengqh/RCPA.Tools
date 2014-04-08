@@ -1,13 +1,28 @@
 ProteomicsTools Software Suite
 ==============================
 * [Introduction](#Introduction)
+  * [BuildSummary](#BuildSummary)
+  * [SRMBuilder](#SRMBuilder)
+  * [O18Quant](#O18Quant)
 * [Download and install](#download)
 * [Citation](#Citation)
 * [Changes](#changes)
 
 <a name="Introduction"/>
 # Introduction #
-ProteomicsTools software suite contains a bunch of tools used in proteomics research, from identification result parsing to quantification, modification, et. al.   
+ProteomicsTools software suite contains a bunch of tools used in proteomics research, from identification result parsing to quantification, modification, et. al.
+
+Currently, there are three major softwares with full documents:
+<a name="BuildSummary">
+* [[BuildSummary](https://github.com/shengqh/RCPA.Tools/documents/buildsummary/buildsummary.MD)] :
+The target-decoy database search strategy is widely accepted as a standard method for estimating the false discovery rate (FDR) of peptide identification, based on which peptide-spectrum matches (PSMs) from the target database are filtered. To improve the sensitivity of protein identification given a fixed accuracy (frequently defined by a protein FDR threshold), a post-processing procedure is often used that integrates results from different peptide search engines that had assayed the same dataset. In this work, we show that PSMs that are grouped by the precursor charge, the number of missed internal cleavage sites, the modification state, the numbers of protease termini and the proteins grouped by their unique peptide count should be filtered separately according to the given FDR. We also develop an iterative procedure to filter the PSMs and proteins simultaneously, according to the given FDR. Finally, we present a general framework to integrate the results from different peptide search engines using the same FDR threshold. Our method was tested with several shotgun proteomics datasets that were acquired by multiple LC/MS instruments from two different biological samples. The results showed a satisfactory performance. 
+
+<a name="SRMBuilder">
+* [SRMBuilder](http://www.proteomics.ac.cn/software/proteomicstools/srmbuilder/srmbuilder.htm) :
+With high sensitivity and reproducibility, selected reaction monitoring (SRM) has become increasingly popular in proteome research for targeted quantification of low abundance proteins and post translational modification. SRM is also well accepted in other mass-spectrometry based research areas such as lipidomics and metabolomics, which necessitates the development of easy-to-use software for both post-acquisition SRM data analysis and quantification result validation. Here, we introduce a software tool SRMBuilder, which can automatically parse SRM data in multiple file formats, assign transitions to compounds, match light/heavy transition/compound pairs and provide a user-friendly graphic interface to manually validate the quantification result at transition/compound/sample level. SRMBuilder will greatly facilitate processing of the post-acquisition data files and validation of quantification result for SRM. 
+
+<a name="O18Quant">
+* [O18Quant](http://www.proteomics.ac.cn/software/proteomicstools/buildsummary/buildsummary.htm)
 
 <a name="download"/>
 # Download and install #
@@ -17,13 +32,15 @@ You can download the execute software from [RCPA.Tools](https://github.com/sheng
 [RCPA.Proteomics](https://github.com/shengqh/RCPA.Proteomics/)
 [RCPA.Tools](https://github.com/shengqh/RCPA.Tools/)
 
-Two library are required for executing the software:	
+Two libraries are required for executing the software:	
 * [MSFileReader library](http://sjsupport.thermofinnigan.com/public/detail.asp?id=703)
 * [dotNET Platform 4.0] (http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=17718)
 
 <a name="Citation"/>
 # Citation #
-* Sheng, Q., et al. (2012) BuildSummary: using a group-based approach to improve the sensitivity of peptide/protein identification in shotgun proteomics, J. Proteome Res., 11, 1494-1502.
+* Sheng Q, Dai J, Wu Y, Tang H, Zeng R: BuildSummary: using a group-based approach to improve the sensitivity of peptide/protein identification in shotgun proteomics. J Proteome Res 2012, 11(3):1494-1502.
+* Sheng Q, Wu C, Su Z, Zeng R: SRMBuilder: a user-friendly tool for selected reaction monitoring data analysis. Journal of bioinformatics and computational biology 2011, 9 Suppl 1:51-62.
+
 
 <a name="Changes"/>
 # Changes #
