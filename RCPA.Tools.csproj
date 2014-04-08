@@ -179,6 +179,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="README.md" />
     <None Include="Reverse_Lys_isotope.ini">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
