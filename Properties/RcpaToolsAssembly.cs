@@ -13,8 +13,8 @@ static class RcpaToolsAssembly
 {
   internal const string Title = "Proteomics Tool Suite";
   internal const string Author = "Quanhu SHENG";
-  internal const string Company = "Research Center for Proteome Analysis, CAS, China";
-  internal const string Copyright = "Copyright (C) 2006-2013 " + Company;
-  internal const string Version = "3.4.9.0";
+  internal const string Company = "RCPA/CQS";
+  internal const string Copyright = "Copyright (C) 2006-2014 " + Company;
+  internal const string Version = "3.5.0.0";
   internal const string InformationalVersion = Version;
 }
