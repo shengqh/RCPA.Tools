@@ -168,6 +168,9 @@
     <None Include="Forward_Lys_isotope.ini">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="README.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="ISOTOPE.DAT">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -179,7 +182,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="README.md" />
     <None Include="Reverse_Lys_isotope.ini">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -245,9 +247,6 @@
     <Content Include="proteases.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="readme.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="scripts\" />
@@ -273,5 +272,9 @@
   <PropertyGroup>
     <PostBuildEvent>
     </PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>copy "$(SolutionDir)RCPA.Tools.wiki\HOME.md" "$(ProjectDir)README.md"
+</PreBuildEvent>
   </PropertyGroup>
 </Project>
