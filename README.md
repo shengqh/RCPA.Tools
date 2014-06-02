@@ -1,9 +1,9 @@
 ProteomicsTools Software Suite
 ==
 * [Introduction](#Introduction)
-  * [BuildSummary](#BuildSummary) [[Full documents](BuildSummary)]
-  * [SRMBuilder](#SRMBuilder) [[Full documents](SRMBuilder)]
-  * [O18Quant](#O18Quant) [[Full documents](O18Quant)]
+  * [BuildSummary](#BuildSummary) [[Full documents](https://github.com/shengqh/RCPA.Tools/wiki/BuildSummary)]
+  * [SRMBuilder](#SRMBuilder) [[Full documents](https://github.com/shengqh/RCPA.Tools/wiki/SRMBuilder)]
+  * [O18Quant](#O18Quant) [[Full documents](https://github.com/shengqh/RCPA.Tools/wiki/O18Quant)]
 * [Prerequisites](#Prerequisites)
 * [Installation](#Installation)
 * [Citation](#Citation)
