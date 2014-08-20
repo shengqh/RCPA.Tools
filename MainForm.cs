@@ -105,6 +105,9 @@ namespace ProteomicsTools
       //20110321
       AddCommand(new BuildSummaryWebFormatConverterUI.Command());
 
+      //20140808
+      AddCommand(new MultipleMgf2Ms2ProcessorUI.Command());
+
       //Distiller
       AddCommand(new DistinctResultDistillerUI.Command());
       AddCommand(new LabelledResultDistillerUI.Command());
