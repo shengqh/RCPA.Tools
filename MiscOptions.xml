@@ -154,7 +154,7 @@
       <formatID>33003</formatID>
       <GUInameIndex>3</GUInameIndex>
       <formatSample>20040922_HPPP_Flow_01.200.201.1.dta</formatSample>
-      <regex>\d+\.\d+\.\d+\.[dta|out]</regex>
+      <regex>\.\d+\.\d+\.\d{1,2}(?:(?:.dta|.DTA)|$)</regex>
       <!--   -->
       <parseItem>
         <itemName>retentionTime</itemName>

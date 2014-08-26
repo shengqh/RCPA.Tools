@@ -38,6 +38,7 @@ using RCPA.Proteomics.Summary.Uniform;
 using RCPA.Proteomics.Statistic;
 using RCPA.Proteomics.Quantification.O18;
 using RCPA;
+using RCPA.Proteomics.Quantification.IsobaricLabelling;
 
 namespace ProteomicsTools
 {
@@ -59,7 +60,8 @@ namespace ProteomicsTools
       AddCommand(new SequestSummaryBuilderUI.Command());
       AddCommand(new MascotDatSummaryBuilderUI.Command());
       AddCommand(new XTandemXmlSummaryBuilderUI.Command());
-      AddCommand(new pFindSummaryBuilderUI.Command());
+      //AddCommand(new pFindSummaryBuilderUI.Command());
+      AddCommand(new pFindSummaryBuilder2UI.Command());
 
       AddCommand(new ToolCommandSeparator(MenuCommandType.Summary));
 
@@ -174,6 +176,8 @@ namespace ProteomicsTools
       AddCommand(new ITraqProteinStatisticBuilderUI.Command());
 
       AddCommand(new IsobaricLabelingEfficiencyCalculatorUI.Command());
+      AddCommand(new IsobaricResultMultipleFileDistillerUI.Command());
+      AddCommand(new IsobaricProteinStatisticBuilderUI.Command());
 
       AddCommand(new ToolCommandSeparator(MenuCommandType.Quantification));
       AddCommand(new LipidQuantificationProcessorUI.Command());

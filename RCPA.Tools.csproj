@@ -149,6 +149,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="..\RCPA.Core\template\CyclicLoessNormalization.r">
+      <Link>template\CyclicLoessNormalization.r</Link>
+    </None>
     <None Include="..\RCPA.Test\data\itraq-4plex.csv">
       <Link>itraq-4plex.csv</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
