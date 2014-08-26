@@ -59,8 +59,9 @@ The c# source code is also provided at following repositories. Visual Studio 201
 <a name="Changes"/>
 #Changes
 
-2014/08/26 Version 3.5.7
-Enhanced: pFind summary builder.
+|Date|Version|Information|
+|---|---|---|
+|2014/08/26| 3.5.7|Enhanced: pFind summary builder|
 
 2014/08/20 Version 3.5.6
 Enhanced: TurboRaw2MGF, now support TMT10.
