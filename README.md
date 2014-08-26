@@ -59,6 +59,15 @@ The c# source code is also provided at following repositories. Visual Studio 201
 <a name="Changes"/>
 #Changes
 
+2014/08/26 Version 3.5.7
+Enhanced: pFind summary builder.
+
+2014/08/20 Version 3.5.6
+Enhanced: TurboRaw2MGF, now support TMT10.
+
+2014/07/18 Version 3.5.2
+Enhanced: Raw File Viewer, now support to filter by MS level, also display "filter" for Thermo Raw file.
+
 2014/04/14 Version 3.5.1
 Enhanced: O18 Quantification Calculator v1.1.6, O18 Quantification Summary Viewer v1.4.6: generating temporary files into "detailed" directory other than with final summary file. 
 
