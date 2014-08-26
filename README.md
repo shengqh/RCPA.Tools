@@ -60,7 +60,7 @@ The c# source code is also provided at following repositories. Visual Studio 201
 #Changes
 
 |Date|Version|Information|
-|---|---|---|
+|:---|:---|:---|
 |2014/08/26| 3.5.7|Enhanced: pFind summary builder|
 |2014/08/20|3.5.6|Enhanced: TurboRaw2MGF, now support TMT10.|
 |2014/07/18|3.5.2|Enhanced: Raw File Viewer, now support to filter by MS level, also display "filter" for Thermo Raw file.|
