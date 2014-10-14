@@ -2,6 +2,20 @@
 <miscSettingsStructure>
   <DatabaseParseDefinitions>
     <parseFormat>
+      <formatName>WholeName</formatName>
+      <formatID>1000</formatID>
+      <GUInameIndex>0</GUInameIndex>
+      <formatSample>Keep the whole protein name</formatSample>
+      <!--   -->
+      <parseItem>
+        <itemName>accessNumber</itemName>
+        <regularExpression>(\S+)</regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+    </parseFormat>
+
+    <parseFormat>
       <formatName>IPI</formatName>
       <formatID>1001</formatID>
       <GUInameIndex>1</GUInameIndex>
@@ -292,7 +306,7 @@
       <!--   -->
       <parseItem>
         <itemName>rawFile</itemName>
-        <regularExpression></regularExpression>
+        <regularExpression>File:\"(.+).wiff\"</regularExpression>
         <slope>1.0</slope>
         <offset>0.0</offset>
       </parseItem>

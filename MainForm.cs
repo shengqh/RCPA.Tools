@@ -7,7 +7,6 @@ using RCPA.Proteomics.Quantification;
 using RCPA.Proteomics.Quantification.Labelfree;
 using RCPA.Proteomics.Quantification.SILAC;
 using RCPA.Proteomics.Raw;
-using RCPA.Proteomics.Sequest.Format;
 using RCPA.Tools;
 using RCPA.Tools.Database;
 using RCPA.Tools.Distiller;
@@ -39,6 +38,7 @@ using RCPA.Proteomics.Statistic;
 using RCPA.Proteomics.Quantification.O18;
 using RCPA;
 using RCPA.Proteomics.Quantification.IsobaricLabelling;
+using RCPA.Proteomics.ProteomeDiscoverer;
 
 namespace ProteomicsTools
 {
@@ -57,11 +57,12 @@ namespace ProteomicsTools
       //Summary
       AddCommand(new UniformBuildSummaryUI.Command());
 
-      AddCommand(new SequestSummaryBuilderUI.Command());
-      AddCommand(new MascotDatSummaryBuilderUI.Command());
-      AddCommand(new XTandemXmlSummaryBuilderUI.Command());
+      //AddCommand(new SequestSummaryBuilderUI.Command());
+      //AddCommand(new MascotDatSummaryBuilderUI.Command());
+
+      //AddCommand(new XTandemXmlSummaryBuilderUI.Command());
       //AddCommand(new pFindSummaryBuilderUI.Command());
-      AddCommand(new pFindSummaryBuilder2UI.Command());
+      //AddCommand(new pFindSummaryBuilder2UI.Command());
 
       AddCommand(new ToolCommandSeparator(MenuCommandType.Summary));
 
@@ -99,7 +100,7 @@ namespace ProteomicsTools
 
       AddCommand(new ToolCommandSeparator(MenuCommandType.Format));
 
-      AddCommand(new MsfFileToNoredundantProcessorUI.Command());
+      //AddCommand(new MsfFileToNoredundantProcessorUI.Command());
 
       //20110214
       AddCommand(new ProteinProphetToSummaryProcessorUI.Command());
@@ -109,6 +110,9 @@ namespace ProteomicsTools
 
       //20140808
       AddCommand(new MultipleMgf2Ms2ProcessorUI.Command());
+
+      //20141014
+      AddCommand(new MsfFastaDistillerUI.Command());
 
       //Distiller
       AddCommand(new DistinctResultDistillerUI.Command());

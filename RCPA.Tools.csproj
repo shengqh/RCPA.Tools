@@ -168,14 +168,14 @@
       <Link>tmt-6plex.csv</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="..\RCPA.Tools.wiki\Home.md">
+      <Link>Home.md</Link>
+    </None>
     <None Include="app.config" />
     <None Include="ataqs.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Forward_Lys_isotope.ini">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="README.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="ISOTOPE.DAT">
@@ -184,10 +184,17 @@
     <None Include="Leucine_isotope.ini">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="OMSSA.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="README.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Reverse_Lys_isotope.ini">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
