@@ -59,6 +59,18 @@ The c# source code is also provided at following repositories. Visual Studio 201
 <a name="Changes"/>
 #Changes
 
+2014/11/12 Version 3.6.9
+New feature: Extract peptide information from percolator input.xml and output.xml.
+
+2014/10/16 Version 3.6.8
+Bugfixed: Compatible with Mascot dat file with decoy searching.
+
+2014/10/16 Version 3.6.7
+Bugfixed: Modification parse error for mascot MSF file.
+
+2014/10/15 Version 3.6.6
+Bugfixed: Modification parse error for decoy entry in MSF file.
+
 2014/10/14 Version 3.6.5
 Bugfixed: Error "bad format" when parsing xtandem xml file.
 

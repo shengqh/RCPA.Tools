@@ -18,7 +18,6 @@ using RCPA.Tools.Misc;
 using RCPA.Tools.Modification;
 using RCPA.Tools.Quantification;
 using RCPA.Tools.Quantification.Lipid;
-using RCPA.Tools.Quantification.SmallMolecule;
 using RCPA.Tools.Raw;
 using RCPA.Tools.Sequest;
 using RCPA.Tools.Summary;
@@ -39,6 +38,7 @@ using RCPA.Proteomics.Quantification.O18;
 using RCPA;
 using RCPA.Proteomics.Quantification.IsobaricLabelling;
 using RCPA.Proteomics.ProteomeDiscoverer;
+using RCPA.Proteomics.Percolator;
 
 namespace ProteomicsTools
 {
@@ -123,6 +123,8 @@ namespace ProteomicsTools
       AddCommand(new SnpPeptideDistillerUI.Command());
       AddCommand(new TargetPeptideDistillerUI.Command());
 
+      AddCommand(new MultiplePercolatorPeptideDistillerUI.Command());
+
       AddCommand(new ToolCommandSeparator(MenuCommandType.Distiller));
 
       AddCommand(new IdentifiedPeptidesDistillerUI.Command());
@@ -198,18 +200,18 @@ namespace ProteomicsTools
 
       AddCommand(new ToolCommandSeparator(MenuCommandType.Quantification));
 
-      AddCommand(new AgilentToMS1BuilderUI.Command());
+      //AddCommand(new AgilentToMS1BuilderUI.Command());
 
 #if (!PublicVersion)
       AddCommand(new ToolCommandSeparator(MenuCommandType.Quantification));
 
-      AddCommand(new SmallMoleculeDataPreparationProcessorUI.Command());
-      AddCommand(new SmallMoleculeDataMostIntensityBuilderUI.Command());
-      AddCommand(new SmallMoleculeSignificantPeakFinderUI.Command());
-      AddCommand(new SmallMoleculeQuantificationViewerUI.Command());
-      AddCommand(new SmallMoleculeDataImageBuilderUI.Command());
+      //AddCommand(new SmallMoleculeDataPreparationProcessorUI.Command());
+      //AddCommand(new SmallMoleculeDataMostIntensityBuilderUI.Command());
+      //AddCommand(new SmallMoleculeSignificantPeakFinderUI.Command());
+      //AddCommand(new SmallMoleculeQuantificationViewerUI.Command());
+      //AddCommand(new SmallMoleculeDataImageBuilderUI.Command());
 
-      AddCommand(new ToolCommandSeparator(MenuCommandType.Quantification));
+      //AddCommand(new ToolCommandSeparator(MenuCommandType.Quantification));
       AddCommand(new ForwardReverseRatioCalibratorUI.Command());
 
       AddCommand(new ProteinChromotographViewer.Command());
@@ -249,7 +251,7 @@ namespace ProteomicsTools
       //Sequest
       AddCommand(new One2AllProcessorCommand());
       AddCommand(new AtomCompositionIsotopicProfileBuilderCommand());
-      AddCommand(new NGlycanPeptideMassCalculatorCommand());
+      //AddCommand(new NGlycanPeptideMassCalculatorCommand());
 
       //Database
       AddCommand(new ReversedDatabaseBuilderCommand());
@@ -267,7 +269,7 @@ namespace ProteomicsTools
       AddCommand(new MassCalculatorUI.Command());
       AddCommand(new IdentifiedPeptideSubtractorUI.Command());
       AddCommand(new RawFileViewerUI.Command());
-      AddCommand(new AgilentFileViewerUI.Command());
+      //AddCommand(new AgilentFileViewerUI.Command());
       AddCommand(new GenerateIsotopicFileUI.Command());
 
 #if (!PublicVersion)
