@@ -227,6 +227,7 @@ namespace ProteomicsTools
       AddCommand(new MassOffsetCalculatorUI.Command());
       AddCommand(new ScanCountCalculatorUI.Command());
       AddCommand(new ProteinPeptideCorrelationCalculatorUI.Command());
+      AddCommand(new PrecursorOffsetStatisticMainBuilderUI.Command());
 
       //Modification
       AddCommand(new IdentifiedResultModificationSeparatorUI.Command());

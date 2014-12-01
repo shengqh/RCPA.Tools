@@ -59,6 +59,9 @@ The c# source code is also provided at following repositories. Visual Studio 201
 <a name="Changes"/>
 #Changes
 
+2014/11/26 Version 3.7.0
+Enhanced: TurboRaw2MGF: 1) Export with Proteome Discoverer title format. 2) Export mzXml format
+
 2014/11/12 Version 3.6.9
 New feature: Extract peptide information from percolator input.xml and output.xml.
 
