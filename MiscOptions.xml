@@ -162,13 +162,13 @@
       <!--   -->
     </parseFormat>
 
-    <!--TurboRAW2MGF, dta format-->
+    <!--Dta format-->
     <parseFormat>
-      <formatName>TurboRAW2MGF, DTA format</formatName>
+      <formatName>DTA format</formatName>
       <formatID>33003</formatID>
       <GUInameIndex>3</GUInameIndex>
-      <formatSample>20040922_HPPP_Flow_01.200.201.1.dta</formatSample>
-      <regex>\.\d+\.\d+\.\d{1,2}(?:(?:.dta|.DTA)|$)</regex>
+      <formatSample>sample.5.5.1 / sample.5.5.1.dta / sample.5.5.1 File:"sample.raw", NativeID:"controllerType=0 controllerNumber=1 scan=5"</formatSample>
+      <regex>.+\.\d+\.\d+\.\d{1,2}(?:(?:.dta|.DTA)|(?:\s|$))</regex>
       <!--   -->
       <parseItem>
         <itemName>retentionTime</itemName>
@@ -193,14 +193,14 @@
       <!--   -->
       <parseItem>
         <itemName>rawFile</itemName>
-        <regularExpression>(.+)\.\d+\.\d+\.\d{1,2}(?:(?:.dta|.DTA)|$)</regularExpression>
+        <regularExpression>(.+)\.\d+\.\d+\.\d{1,2}(?:(?:.dta|.DTA)|(?:\s|$))</regularExpression>
         <slope>1</slope>
         <offset>0</offset>
       </parseItem>
       <!--   -->
       <parseItem>
         <itemName>scanNumber</itemName>
-        <regularExpression>.+\.(\d+)\.(\d+)\.\d{1,2}(?:(?:.dta|.DTA)|$)</regularExpression>
+        <regularExpression>.+\.(\d+)\.(\d+)\.\d{1,2}(?:(?:.dta|.DTA)|(?:\s|$))</regularExpression>
         <slope>1</slope>
         <offset>0</offset>
       </parseItem>

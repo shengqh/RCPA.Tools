@@ -293,6 +293,7 @@
     </Content>
     <Content Include="MiscOptions.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="proteases.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
