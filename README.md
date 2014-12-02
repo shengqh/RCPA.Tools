@@ -59,6 +59,9 @@ The c# source code is also provided at following repositories. Visual Studio 201
 <a name="Changes"/>
 #Changes
 
+2014/12/02 Version 3.7.1
+Enhanced: TurboRaw2MGF: 1) Export ProteomeDiscoverer1.4 compatible MGF.
+
 2014/11/26 Version 3.7.0
 Enhanced: TurboRaw2MGF: 1) Export with Proteome Discoverer title format. 2) Export mzXml format
 
