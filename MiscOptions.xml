@@ -165,8 +165,8 @@
     <!--Dta format-->
     <parseFormat>
       <formatName>DTA format</formatName>
-      <formatID>33003</formatID>
-      <GUInameIndex>3</GUInameIndex>
+      <formatID>33002</formatID>
+      <GUInameIndex>2</GUInameIndex>
       <formatSample>sample.5.5.1 / sample.5.5.1.dta / sample.5.5.1 File:"sample.raw", NativeID:"controllerType=0 controllerNumber=1 scan=5"</formatSample>
       <regex>.+\.\d+\.\d+\.\d{1,2}(?:(?:.dta|.DTA)|(?:\s|$))</regex>
       <!--   -->
@@ -201,6 +201,51 @@
       <parseItem>
         <itemName>scanNumber</itemName>
         <regularExpression>.+\.(\d+)\.(\d+)\.\d{1,2}(?:(?:.dta|.DTA)|(?:\s|$))</regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+    </parseFormat>
+
+    <!--ProteoWizard format-->
+    <parseFormat>
+      <formatName>ProteoWizard/msconvert</formatName>
+      <formatID>33003</formatID>
+      <GUInameIndex>3</GUInameIndex>
+      <formatSample>sample.5.5 / sample.5.5 File:"sample.raw", NativeID:"controllerType=0 controllerNumber=1 scan=5"</formatSample>
+      <regex>.+\.\d+\.\d+\.\d*(?:\s|$)</regex>
+      <!--   -->
+      <parseItem>
+        <itemName>retentionTime</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>experiment</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>cycles</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>rawFile</itemName>
+        <regularExpression>(.+)\.\d+\.\d+\.\d*(?:\s|$)</regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>scanNumber</itemName>
+        <regularExpression>.+\.(\d+)\.(\d+)\.\d*(?:\s|$)</regularExpression>
         <slope>1</slope>
         <offset>0</offset>
       </parseItem>
