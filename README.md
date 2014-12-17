@@ -61,6 +61,9 @@ The c# source code is also provided at following repositories. Visual Studio 201
 <a name="Changes"/>
 #Changes
 
+2014/12/17 Version 3.7.6
+New feature: Isobaric labelling quantification tools 
+
 2014/12/14 Version 3.7.5
 Enhanced: Extract peptide information from percolator input.xml and output.xml : export more informations
 Enhanced: BuildSummary : can use pre-generated peptides as input file.

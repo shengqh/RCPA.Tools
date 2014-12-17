@@ -189,6 +189,10 @@
       <Link>template\DetectSignificantIon.r</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="..\RCPA.Proteomics\template\Quantification.r">
+      <Link>template\Quantification.r</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="..\RCPA.Test\data\itraq-4plex.csv">
       <Link>itraq-4plex.csv</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -286,6 +290,7 @@
     <Content Include="..\RCPA.Test\data\isobaric.xml">
       <Link>isobaric.xml</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="..\RCPA.Test\data\SAP_PTM.txt">
       <Link>SAP_PTM.txt</Link>
