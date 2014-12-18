@@ -189,9 +189,11 @@
       <Link>template\DetectSignificantIon.r</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="..\RCPA.Proteomics\template\Quantification.r">
-      <Link>template\Quantification.r</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <None Include="..\RCPA.Proteomics\template\QuantificationMedian.r">
+      <Link>template\QuantificationMedian.r</Link>
+    </None>
+    <None Include="..\RCPA.Proteomics\template\QuantificationSum.r">
+      <Link>template\QuantificationSum.r</Link>
     </None>
     <None Include="..\RCPA.Test\data\itraq-4plex.csv">
       <Link>itraq-4plex.csv</Link>
