@@ -61,8 +61,14 @@ The c# source code is also provided at following repositories. Visual Studio 201
 <a name="Changes"/>
 #Changes
 
+2014/12/18 Version 3.7.8
+Enhanced: Isobaric Labelling Protein Statistic Builder 1.2.0 : Export more protein information with final result.
+
+2014/12/17 Version 3.7.7
+Enhanced: Isobaric labelling quantification tool supports both "Sum" and "Median" methods to calculate protein ratio from peptide intensities.
+
 2014/12/17 Version 3.7.6
-New feature: Isobaric labelling quantification tools 
+New feature: Isobaric labelling quantification tool 
 
 2014/12/14 Version 3.7.5
 Enhanced: Extract peptide information from percolator input.xml and output.xml : export more informations
