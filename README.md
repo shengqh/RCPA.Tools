@@ -52,14 +52,16 @@ The c# source code is also provided at following repositories. Visual Studio 201
 <a name="Citation"/>
 #Citation
 
+- Sheng Q, Li R, Dai J, Li Q, Su Z, Guo Y, Li C, Shyr Y, Zeng R: Preprocessing significantly improves the peptide/protein identification sensitivity of high resolution isobarically labeled tandem mass spectrometry data. Mol Cell Proteomics 2014.
+- Guo Y, Miyagi M, Zeng R, Sheng Q: O18Quant: A Semiautomatic Strategy for Quantitative Analysis of High-Resolution 16O/18O Labeled Data. BioMed research international 2014, 2014:971857.
 - Sheng Q, Dai J, Wu Y, Tang H, Zeng R: BuildSummary: using a group-based approach to improve the sensitivity of peptide/protein identification in shotgun proteomics. J Proteome Res 2012, 11(3):1494-1502.
 - Sheng Q, Wu C, Su Z, Zeng R: SRMBuilder: a user-friendly tool for selected reaction monitoring data analysis. Journal of bioinformatics and computational biology 2011, 9 Suppl 1:51-62.
-- Guo Y, Miyagi M, Zeng R, and Sheng Q. (2014) O18Quant: A Semiautomatic Strategy for Quantitative Analysis of High-Resolution 16O/18O Labeled Data. BioMed research international 2014, 971857
-- Sheng Q, Li R, Dai J, Li Q, Su Z, Guo Y, Li C, Shyr Y, and Zeng R. (2014) Preprocessing significantly improves the peptide/protein identification sensitivity of high resolution isobarically labeled tandem mass spectrometry data. Mol Cell Proteomics (doi:10.1074/mcp.O114.041376)
-
 
 <a name="Changes"/>
 #Changes
+
+2014/12/22 Version 3.7.9 (IMPORTANT)
+Bugfix: Isobaric Labelling Protein Statistic Builder 1.2.1 : R code error for quantify peptides. If you used 1.2.0, you need to rerun the analysis.
 
 2014/12/18 Version 3.7.8
 Enhanced: Isobaric Labelling Protein Statistic Builder 1.2.0 : Export more protein information with final result.
