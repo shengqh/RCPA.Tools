@@ -325,7 +325,7 @@
       <formatName>AB_SCIEX_MS­_Converter</formatName>
       <formatID>33200</formatID>
       <GUInameIndex>200</GUInameIndex>
-      <formatSample>Locus:1.1.1.584.2</formatSample>
+      <formatSample>Locus:1.1.1.584.2 File:"MyRawFile.mgf"</formatSample>
       <regex>Locus:</regex>
       <!--   -->
       <parseItem>
@@ -351,7 +351,7 @@
       <!--   -->
       <parseItem>
         <itemName>rawFile</itemName>
-        <regularExpression>File:\"(.+).wiff\"</regularExpression>
+        <regularExpression>File:[\\]{0,1}\"(.+).wiff[\\]{0,1}\"</regularExpression>
         <slope>1.0</slope>
         <offset>0.0</offset>
       </parseItem>

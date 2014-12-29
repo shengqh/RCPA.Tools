@@ -60,6 +60,10 @@ The c# source code is also provided at following repositories. Visual Studio 201
 <a name="Changes"/>
 #Changes
 
+2014/12/29 Version 3.8.1
+Enhanced: O18 Quantification Suite: filter outliers before linear regression.
+Enhanced: SILAC Quantification Viewer: filter protein/peptide quantification result using R square. Only protein/peptide passed R square filter will be exported.
+
 2014/12/23 Version 3.8.0 (IMPORTANT)
 Bugfix: Isobaric Labelling Protein Statistic Builder 1.2.2 : R code error for quantify protein using Sum method. If you used 1.2.0, you need to rerun the analysis.
 
