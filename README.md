@@ -60,6 +60,9 @@ The c# source code is also provided at following repositories. Visual Studio 201
 <a name="Changes"/>
 #Changes
 
+2014/12/30 Version 3.8.3
+Bugfix: BuildSummary 7.1.2: Theoretical mass and experimental mass parsing error in MzIdent format, MSGF and MyriMatch will be affected.
+
 2014/12/30 Version 3.8.2
 Bugfix: MaxQuant Site To Peptide Converter 1.0.2: parsing of modification site
 
