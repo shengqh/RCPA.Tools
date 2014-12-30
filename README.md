@@ -60,6 +60,9 @@ The c# source code is also provided at following repositories. Visual Studio 201
 <a name="Changes"/>
 #Changes
 
+2014/12/30 Version 3.8.2
+Bugfix: MaxQuant Site To Peptide Converter 1.0.2: parsing of modification site
+
 2014/12/29 Version 3.8.1
 Enhanced: O18 Quantification Suite: filter outliers before linear regression.
 Enhanced: SILAC Quantification Viewer: filter protein/peptide quantification result using R square. Only protein/peptide passed R square filter will be exported.
