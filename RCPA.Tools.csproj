@@ -137,10 +137,10 @@
     </Compile>
     <None Include="..\RCPA.Core\template\CyclicLoessNormalization.r">
       <Link>template\CyclicLoessNormalization.r</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\RCPA.Proteomics\template\DetectSignificantIon.r">
       <Link>template\DetectSignificantIon.r</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\RCPA.Proteomics\template\MultiplePairQuantification.r">
       <Link>template\MultiplePairQuantification.r</Link>
@@ -148,6 +148,14 @@
     </None>
     <None Include="..\RCPA.Proteomics\template\PairQuantification.r">
       <Link>template\PairQuantification.r</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\RCPA.Proteomics\template\PeptideQuantification.r">
+      <Link>template\PeptideQuantification.r</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\RCPA.Proteomics\template\ProteinQuantification.r">
+      <Link>template\ProteinQuantification.r</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\RCPA.Proteomics\template\QuantificationMedian.r">

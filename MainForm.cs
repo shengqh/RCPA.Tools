@@ -183,6 +183,8 @@ namespace ProteomicsTools
 
       AddCommand(new IsobaricLabelingEfficiencyCalculatorUI.Command());
       AddCommand(new IsobaricResultMultipleFileDistillerUI.Command());
+      AddCommand(new IsobaricLabelingExperimentalDesignBuilderUI.Command());
+      AddCommand(new IsobaricPeptideStatisticBuilderUI.Command());
       AddCommand(new IsobaricProteinStatisticBuilderUI.Command());
 
       AddCommand(new ToolCommandSeparator(MenuCommandType.Quantification));

@@ -5,6 +5,7 @@ ProteomicsTools Software Suite
   * [SRMBuilder](#SRMBuilder) [[Full documents](SRMBuilder)]
   * [O18Quant](#O18Quant) [[Full documents](O18Quant)]
   * [TurboRaw2MGF](#TurboRaw2MGF) [[Full documents](TurboRaw2MGF)]
+  * [Isobaric Labeling Quantification Suite](IsobaricQuant)
 * [Prerequisites](#Prerequisites)
 * [Installation](#Installation)
 * [Citation](#Citation)
@@ -59,6 +60,11 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+
+2015/01/05 Version 3.8.4
+New: Isobaric Labeling Experimental Design Builder: Setup experimental category information and refernce channels which will be used in quantification.
+New: Isobaric Labeling Peptide Statistic Builder: Quantify peptides.
+Enhanced: Isobaric Labeling Protein Statistic Builder: The protein intensity of sample channels in final resuult will be normalized by refernece channel.
 
 2014/12/30 Version 3.8.3
 Bugfix: BuildSummary 7.1.2: Theoretical mass and experimental mass parsing error in MzIdent format, MSGF and MyriMatch will be affected.
