@@ -61,6 +61,9 @@ The c# source code is also provided at following repositories. Visual Studio 201
 <a name="Changes"/>
 #Changes
 
+2015/01/05 Version 3.8.5
+Enhanced: MaxQuant Site To Peptide Converter 1.0.3: parsing of modification site based on msms.txt for SILAC data.
+
 2015/01/05 Version 3.8.4
 New: Isobaric Labeling Experimental Design Builder: Setup experimental category information and refernce channels which will be used in quantification.
 New: Isobaric Labeling Peptide Statistic Builder: Quantify peptides.
