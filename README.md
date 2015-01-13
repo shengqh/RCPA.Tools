@@ -61,6 +61,10 @@ The c# source code is also provided at following repositories. Visual Studio 201
 <a name="Changes"/>
 #Changes
 
+2015/01/13 Version 3.8.6
+Enhanced: Isobaric Labeling Peptide Statistic Builder: quantify peptides with/without modification.
+Bugfix: OMSSA parser: trust charge information in title.
+
 2015/01/05 Version 3.8.5
 Enhanced: MaxQuant Site To Peptide Converter 1.0.3: parsing of modification site based on msms.txt for SILAC data.
 
