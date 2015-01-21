@@ -222,7 +222,6 @@ namespace ProteomicsTools
       //Statistic
       AddCommand(new ProteinDistributionUI.Command());
       AddCommand(new PeptideDistributionUI.Command());
-      AddCommand(new ScoreDistributionBuilderUI.Command());
       AddCommand(new ScoreComparisonBuilderUI.Command());
       AddCommand(new RawIonStatisticMainBuilderUI.Command());
       AddCommand(new PrecursorOffsetCalculatorUI.Command());

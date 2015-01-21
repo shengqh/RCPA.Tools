@@ -396,7 +396,7 @@
       <!--   -->
       <parseItem>
         <itemName>rawFile</itemName>
-        <regularExpression></regularExpression>
+        <regularExpression>(.+?)\sSpectrum</regularExpression>
         <slope>1.0</slope>
         <offset>0.0</offset>
       </parseItem>

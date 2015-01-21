@@ -61,6 +61,11 @@ The c# source code is also provided at following repositories. Visual Studio 201
 <a name="Changes"/>
 #Changes
 
+2015/01/21 Version 3.8.7
+Enhanced: BuildSummary: XTandem, Comet and MSGF+ supports using either Score or ExpectValue for false discovery rate filtering.
+Bugfix: Isobaric Labeling Peptide Statistic Builder: R code error when there is missing value.
+Bugfix: OMSSA parser: theoretical mass parsing error.
+
 2015/01/13 Version 3.8.6
 Enhanced: Isobaric Labeling Peptide Statistic Builder: quantify peptides with/without modification.
 Bugfix: OMSSA parser: trust charge information in title.
