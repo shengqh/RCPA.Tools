@@ -276,15 +276,15 @@ namespace ProteomicsTools
 
 #if (!PublicVersion)
       AddCommand(new ToolCommandSeparator(MenuCommandType.Misc));
-      AddCommand(new PNovoSnpValidatorUI.Command());
-      AddCommand(new MascotSnpValidatorUI.Command());
+      AddCommand(new PNovoSAPValidatorUI.Command());
+      AddCommand(new MascotSAPValidatorUI.Command());
       AddCommand(new CombineQuantificationResultProcessorUI.Command());
-      AddCommand(new SpectrumSnpValidatorUI.Command());
+      AddCommand(new SpectrumSAPValidatorUI.Command());
       AddCommand(new IdentifiedPeptideValidatatorUI.Command());
 #endif
 
       //20111017
-      AddCommand(new DatabaseSnpValidatorUI.Command());
+      AddCommand(new DatabaseSAPValidatorUI.Command());
       //AddCommand(new RcpaGrouperUI.Command());
 
       AddCommand(new SrmTransitionDefinitionForm.Command());
