@@ -46,8 +46,6 @@ namespace ProteomicsTools
   {
     public static readonly string version = RcpaToolsAssembly.Version;
 
-    public static bool PublishVersion { get; set; }
-
     public MainForm()
     {
       InitializeComponent();
@@ -202,11 +200,6 @@ namespace ProteomicsTools
 
       AddCommand(new ToolCommandSeparator(MenuCommandType.Quantification));
 
-      //AddCommand(new AgilentToMS1BuilderUI.Command());
-
-#if (!PublicVersion)
-      AddCommand(new ToolCommandSeparator(MenuCommandType.Quantification));
-
       //AddCommand(new SmallMoleculeDataPreparationProcessorUI.Command());
       //AddCommand(new SmallMoleculeDataMostIntensityBuilderUI.Command());
       //AddCommand(new SmallMoleculeSignificantPeakFinderUI.Command());
@@ -217,7 +210,6 @@ namespace ProteomicsTools
       AddCommand(new ForwardReverseRatioCalibratorUI.Command());
 
       AddCommand(new ProteinChromotographViewer.Command());
-#endif
 
       //Statistic
       AddCommand(new ProteinDistributionUI.Command());
@@ -274,14 +266,12 @@ namespace ProteomicsTools
       //AddCommand(new AgilentFileViewerUI.Command());
       AddCommand(new GenerateIsotopicFileUI.Command());
 
-#if (!PublicVersion)
       AddCommand(new ToolCommandSeparator(MenuCommandType.Misc));
       AddCommand(new PNovoSAPValidatorUI.Command());
       AddCommand(new MascotSAPValidatorUI.Command());
       AddCommand(new CombineQuantificationResultProcessorUI.Command());
       AddCommand(new SpectrumSAPValidatorUI.Command());
       AddCommand(new IdentifiedPeptideValidatatorUI.Command());
-#endif
 
       //20111017
       AddCommand(new DatabaseSAPValidatorUI.Command());
@@ -311,6 +301,9 @@ namespace ProteomicsTools
 
       //Setup
       AddCommand(new ExternalProgramConfigUI.Command());
+
+      AddCommand(new ToolCommandSeparator(MenuCommandType.Misc));
+      AddCommand(new AminoacidInsertionBuilderUI.Command());
 
       //Help
       AddCommand(new HelpCommand());
