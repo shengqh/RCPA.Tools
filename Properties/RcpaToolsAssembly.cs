@@ -15,6 +15,6 @@ static class RcpaToolsAssembly
   internal const string Author = "Quanhu SHENG";
   internal const string Company = "RCPA/CQS";
   internal const string Copyright = "Copyright (C) 2006-2015 " + Company;
-  internal const string Version = "3.9.0";
+  internal const string Version = "3.9.1";
   internal const string InformationalVersion = Version;
 }

@@ -60,6 +60,9 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2015/03/10 Version 3.9.1
+ 1. Bugfix: pNovo SAP validator: compatible with pNovo sequences with unknown amino acid.
+ 2. Enhanced: Mascot SAP validator: throw exception when no mutation type information in protein name.
 - 2015/02/26 Version 3.9.0
  1. Enhanced: MaxQuant Evidence To Peptide Converter: remove the PSM from decoy and contaminant proteins.
 - 2015/02/16 Version 3.8.9
