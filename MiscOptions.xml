@@ -127,7 +127,7 @@
       <!--   -->
       <parseItem>
         <itemName>retentionTime</itemName>
-        <regularExpression></regularExpression>
+        <regularExpression>([.\d]+)\s*min</regularExpression>
         <slope>1</slope>
         <offset>0</offset>
       </parseItem>

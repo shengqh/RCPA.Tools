@@ -60,6 +60,9 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2015/03/30 Version 3.9.3
+ 1. Enhanced: TurboRaw2MGF: allow to extract MS3 without any filtering while extract MS2 with filtering.
+ 2. Enhanced: BuildSummary: export retention time for each peptide-spectrum-match
 - 2015/03/25 Version 3.9.2
  1. Enhanced: BuildSummary: the sequence with only I/L difference will be treated as identical sequence when calculating unique peptide count of protein.
  2. Enhanced: BuildSummary: the protein groups without any distinct peptide will be removed.
