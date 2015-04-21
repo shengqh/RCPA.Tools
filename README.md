@@ -1,11 +1,11 @@
 ProteomicsTools Software Suite
 ==
 * [Introduction](#Introduction)
-  * [BuildSummary](#BuildSummary) [[Full documents](BuildSummary)]
-  * [SRMBuilder](#SRMBuilder) [[Full documents](SRMBuilder)]
-  * [O18Quant](#O18Quant) [[Full documents](O18Quant)]
-  * [TurboRaw2MGF](#TurboRaw2MGF) [[Full documents](TurboRaw2MGF)]
-  * [Isobaric Labeling Quantification Suite](IsobaricQuant)
+  * [BuildSummary](#BuildSummary) [[Full documents](https://github.com/shengqh/RCPA.Tools/wiki#BuildSummary)]
+  * [SRMBuilder](#SRMBuilder) [[Full documents](https://github.com/shengqh/RCPA.Tools/wiki#SRMBuilder)]
+  * [O18Quant](#O18Quant) [[Full documents](https://github.com/shengqh/RCPA.Tools/wiki#O18Quant)]
+  * [TurboRaw2MGF](#TurboRaw2MGF) [[Full documents](https://github.com/shengqh/RCPA.Tools/wiki#TurboRaw2MGF)]
+  * [Isobaric Labeling Quantification Suite](https://github.com/shengqh/RCPA.Tools/wiki#IsobaricQuant)
 * [Prerequisites](#Prerequisites)
 * [Installation](#Installation)
 * [Citation](#Citation)
