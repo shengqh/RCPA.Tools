@@ -53,14 +53,7 @@ namespace ProteomicsTools
       this.Text = Constants.GetSQHTitle(RcpaToolsAssembly.Title, version);
 
       //Summary
-      AddCommand(new UniformBuildSummaryUI.Command());
-
-      //AddCommand(new SequestSummaryBuilderUI.Command());
-      //AddCommand(new MascotDatSummaryBuilderUI.Command());
-
-      //AddCommand(new XTandemXmlSummaryBuilderUI.Command());
-      //AddCommand(new pFindSummaryBuilderUI.Command());
-      //AddCommand(new pFindSummaryBuilder2UI.Command());
+      AddCommand(new UniformSummaryBuilderUI.Command());
 
       AddCommand(new ToolCommandSeparator(MenuCommandType.Summary));
 
