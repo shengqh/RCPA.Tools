@@ -74,7 +74,7 @@ namespace ProteomicsTools
       AddCommand(new ToolCommandSeparator(MenuCommandType.Format));
 
       AddCommand(new TurboRaw2MzXmlProcessorUI.Command());
-      AddCommand(new MultipleRaw2DtaProcessorUI.Command());
+      //AddCommand(new MultipleRaw2DtaProcessorUI.Command());
 
       //20120213, 1.0.0
       AddCommand(new MultipleMgfPrecursorCorrectionProcessorUI.Command());
@@ -268,6 +268,9 @@ namespace ProteomicsTools
 
       //20111017
       AddCommand(new DatabaseSAPValidatorUI.Command());
+
+      //20150512
+      AddCommand(new SpectrumScanValidatorUI.Command());
       //AddCommand(new RcpaGrouperUI.Command());
 
       AddCommand(new SrmTransitionDefinitionForm.Command());

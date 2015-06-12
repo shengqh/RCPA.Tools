@@ -60,6 +60,8 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2015/06/12 Version 3.9.4
+ 1. Enhanced: Turbo Mascot MGF Precursor Shift Processor: allow to input the shift mass.
 - 2015/03/30 Version 3.9.3
  1. Enhanced: TurboRaw2MGF: allow to extract MS3 without any filtering while extract MS2 with filtering.
  2. Enhanced: BuildSummary: export retention time for each peptide-spectrum-match
