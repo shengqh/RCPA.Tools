@@ -60,6 +60,8 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2015/06/15 Version 3.9.5
+ 1. Bugfix: SILAC Quantification Calculator: compatible with atom composition file containing line with tab characters only.
 - 2015/06/12 Version 3.9.4
  1. Enhanced: Turbo Mascot MGF Precursor Shift Processor: allow to input the shift mass.
 - 2015/03/30 Version 3.9.3
