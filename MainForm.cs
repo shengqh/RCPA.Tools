@@ -39,6 +39,7 @@ using RCPA;
 using RCPA.Proteomics.Quantification.IsobaricLabelling;
 using RCPA.Proteomics.ProteomeDiscoverer;
 using RCPA.Proteomics.Percolator;
+using RCPA.Proteomics.PeptideProphet;
 
 namespace ProteomicsTools
 {
@@ -271,6 +272,7 @@ namespace ProteomicsTools
 
       //20150512
       AddCommand(new SpectrumScanValidatorUI.Command());
+      AddCommand(new SpectrumXcorrValidatorUI.Command());
       //AddCommand(new RcpaGrouperUI.Command());
 
       AddCommand(new SrmTransitionDefinitionForm.Command());
@@ -300,6 +302,10 @@ namespace ProteomicsTools
 
       AddCommand(new ToolCommandSeparator(MenuCommandType.Misc));
       AddCommand(new AminoacidInsertionBuilderUI.Command());
+
+      AddCommand(new UpdatePepXmlModificationProcessorUI.Command());
+
+      AddCommand(new MascotDatToPepXmlConverterUI.Command());
 
       //Help
       AddCommand(new HelpCommand());

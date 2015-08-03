@@ -119,7 +119,7 @@
   <TITLElineParseDefinitions>
     <!--TurboRAW2MGF, Raw+Cmpd format-->
     <parseFormat>
-      <formatName>TurboRAW2MGF, Raw+Cmpd</formatName>
+      <formatName>TurboRAW2MGF_Raw_Cmpd</formatName>
       <formatID>33001</formatID>
       <GUInameIndex>1</GUInameIndex>
       <formatSample>20040922_HPPP_Flow_01, Cmpd 2, +MSn(654.53), 0.04 min</formatSample>
@@ -164,7 +164,7 @@
 
     <!--Dta format-->
     <parseFormat>
-      <formatName>DTA format</formatName>
+      <formatName>DTA</formatName>
       <formatID>33002</formatID>
       <GUInameIndex>2</GUInameIndex>
       <formatSample>sample.5.5.1 / sample.5.5.1.dta / sample.5.5.1 File:"sample.raw", NativeID:"controllerType=0 controllerNumber=1 scan=5"</formatSample>
@@ -209,7 +209,7 @@
 
     <!--ProteoWizard format-->
     <parseFormat>
-      <formatName>ProteoWizard/msconvert</formatName>
+      <formatName>msconvert</formatName>
       <formatID>33003</formatID>
       <GUInameIndex>3</GUInameIndex>
       <formatSample>sample.5.5 / sample.5.5 File:"sample.raw", NativeID:"controllerType=0 controllerNumber=1 scan=5"</formatSample>
@@ -277,7 +277,7 @@
     
     <!--Agilent-->
     <parseFormat>
-      <formatName>Agilent mzData</formatName>
+      <formatName>Agilent_mzData</formatName>
       <formatID>33103</formatID>
       <GUInameIndex>101</GUInameIndex>
       <formatSample>spectrumId=3056 Polarity=Positive ScanMode=ProductIon TimeInMinutes=18.482 acqNumber=1108919</formatSample>
@@ -322,7 +322,7 @@
 
     <!--AB-->
     <parseFormat>
-      <formatName>AB_SCIEX_MS­_Converter</formatName>
+      <formatName>AB_MSConverter</formatName>
       <formatID>33200</formatID>
       <GUInameIndex>200</GUInameIndex>
       <formatSample>Locus:1.1.1.584.2 File:"MyRawFile.mgf"</formatSample>
@@ -367,9 +367,53 @@
 
 
     <parseFormat>
-      <formatName>Thermo proteome discoverer</formatName>
+      <formatName>Thermo_proteome_discoverer</formatName>
       <formatID>33500</formatID>
       <GUInameIndex>4</GUInameIndex>
+      <formatSample>Spectrum5079 scans: 6208</formatSample>
+      <regex>Spectrum.+scans</regex>
+      <!--   -->
+      <parseItem>
+        <itemName>retentionTime</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>experiment</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>cycles</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>rawFile</itemName>
+        <regularExpression></regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+      <parseItem>
+        <itemName>scanNumber</itemName>
+        <regularExpression>scans.+?(\d+)</regularExpression>
+        <slope>1</slope>
+        <offset>0</offset>
+      </parseItem>
+      <!--   -->
+    </parseFormat>
+
+    <parseFormat>
+      <formatName>Thermo_proteome_discoverer_rawfile</formatName>
+      <formatID>33501</formatID>
+      <GUInameIndex>5</GUInameIndex>
       <formatSample>File16 Spectrum5079 scans: 6208</formatSample>
       <regex>Spectrum.+scans</regex>
       <!--   -->
@@ -412,7 +456,7 @@
 
     <!--TurboRaw To mzXML-->
     <parseFormat>
-      <formatName>TurboRaw To mzXML</formatName>
+      <formatName>TurboRawToMzXML</formatName>
       <formatID>33101</formatID>
       <GUInameIndex>4</GUInameIndex>
       <regex>RAW.mzXml</regex>
@@ -453,13 +497,12 @@
       </parseItem>
       <!--   -->
     </parseFormat>
-
     <!--Mascot.dll 1.0 or older DTASC-->
     <parseFormat>
       <!--  Classic MSQuant format. For historical reasons equal to Analyst QS 1.0 Mascot.dll     -->
       <!--  output. Note: the content of <itemName> (for each <parseItem>) is one of 5 magical     -->
       <!--  names;  "retentionTime", "experiment", "cycles", "rawFile" or "scanNumber".    -->
-      <formatName>Mascot.dll 1.0 or older DTASC</formatName>
+      <formatName>Mascot_1.0_or_older</formatName>
       <formatID>23001</formatID>
       <GUInameIndex>50</GUInameIndex>
       <regex>Elution from:</regex>
@@ -540,7 +583,7 @@
       <!--  For use with the fixed version of DTASC, outputs trailing space in TITLE lines...     -->
       <!--  Note: the content of <itemName> (for each <parseItem>) is one of 5 magical names;     -->
       <!--   "retentionTime", "experiment", "cycles", "rawFile" or "scanNumber".    -->
-      <formatName>DTASuperCharge, v1.19 and later (LTQ-FT)</formatName>
+      <formatName>DTASuperCharge_1.19_later</formatName>
       <formatID>23002</formatID>
       <GUInameIndex>51</GUInameIndex>
       <!--                                                            -->
@@ -620,7 +663,7 @@
       <!--  after the "rawFile" field (in TITLE lines). Note: the content of <itemName>     -->
       <!--  (for each <parseItem>) is one of 5 magical names;  "retentionTime", "experiment",     -->
       <!--  "cycles", "rawFile" or "scanNumber".    -->
-      <formatName>Newer DTASuperCharge, up to v1.18 (LTQ-FT)</formatName>
+      <formatName>DTASuperCharge_1.18_earlier</formatName>
       <formatID>23003</formatID>
       <GUInameIndex>52</GUInameIndex>
       <!--                                                            -->
@@ -700,7 +743,7 @@
       <!--  Experimentnumber (one lower compared to QS 1.0). Note: the content of <itemName>     -->
       <!--  (for each <parseItem>) is one of 5 magical names;  "retentionTime", "experiment",     -->
       <!--  "cycles", "rawFile" or "scanNumber".    -->
-      <formatName>Mascot.dll 1.1/2.0 (single raw file)</formatName>
+      <formatName>Mascot_1.1_single</formatName>
       <formatID>23007</formatID>
       <GUInameIndex>53</GUInameIndex>
       <!--                                                            -->
@@ -779,7 +822,7 @@
       <!--  Including a different base for Experimentnumber (one lower compared to QS 1.0).     -->
       <!--  Note: the content of <itemName> (for each <parseItem>) is one of 5 magical names;     -->
       <!--   "retentionTime", "experiment", "cycles", "rawFile" or "scanNumber".    -->
-      <formatName>Mascot.dll 1.1/2.0 (multiple raw files)</formatName>
+      <formatName>Mascot_1.1_multiple</formatName>
       <formatID>23008</formatID>
       <GUInameIndex>54</GUInameIndex>
       <!--                                                            -->
@@ -854,7 +897,7 @@
     
     <!--TurboRAW2MGF, Cmpd format-->
     <parseFormat>
-      <formatName>TurboRAW2MGF, Cmpd</formatName>
+      <formatName>TurboRAW2MGF_Cmpd</formatName>
       <formatID>33002</formatID>
       <GUInameIndex>2</GUInameIndex>
       <formatSample>Cmpd 2, +MSn(654.53), 0.04 min</formatSample>

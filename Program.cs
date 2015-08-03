@@ -8,6 +8,8 @@ using RCPA.Utils;
 using RCPA.Commandline;
 using ProteomicsTools;
 using RCPA.Tools.Summary;
+using RCPA.Proteomics.Summary;
+using RCPA.Proteomics.Format;
 
 namespace CQS
 {
@@ -26,7 +28,9 @@ namespace CQS
     {
       var commands = new ICommandLineCommand[]
       {
-        new UniformSummaryBuilderUI.Command()
+        new UniformSummaryBuilderUI.Command(),
+        new PeptideSpectrumMatchDistillerCommand(),
+        new Mgf2Ms2ConverterCommand()
       }.ToDictionary(m => m.Name.ToLower());
 
       if (!SystemUtils.IsLinux && args.Length == 0)
