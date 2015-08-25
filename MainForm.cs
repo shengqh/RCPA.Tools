@@ -271,8 +271,12 @@ namespace ProteomicsTools
       AddCommand(new DatabaseSAPValidatorUI.Command());
 
       //20150512
-      AddCommand(new SpectrumScanValidatorUI.Command());
-      AddCommand(new SpectrumXcorrValidatorUI.Command());
+      AddCommand(new ToolCommandSeparator(MenuCommandType.Misc));
+
+      AddCommand(new MS3LibraryBuilderUI.Command());
+      AddCommand(new MS3LibraryPredictorUI.Command());
+      //AddCommand(new SpectrumScanValidatorUI.Command());
+      //AddCommand(new SpectrumXcorrValidatorUI.Command());
       //AddCommand(new RcpaGrouperUI.Command());
 
       AddCommand(new SrmTransitionDefinitionForm.Command());
