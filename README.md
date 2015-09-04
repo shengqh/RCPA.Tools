@@ -52,14 +52,16 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Citation"/>
 #Citation
-
-- Sheng Q, Li R, Dai J, Li Q, Su Z, Guo Y, Li C, Shyr Y, Zeng R: Preprocessing significantly improves the peptide/protein identification sensitivity of high-resolution isobarically labeled tandem mass spectrometry data. Mol Cell Proteomics 2015, 14(2):405-417.
-- Guo Y, Miyagi M, Zeng R, Sheng Q: O18Quant: A Semiautomatic Strategy for Quantitative Analysis of High-Resolution 16O/18O Labeled Data. BioMed research international 2014, 2014:971857.
-- Sheng Q, Dai J, Wu Y, Tang H, Zeng R: BuildSummary: using a group-based approach to improve the sensitivity of peptide/protein identification in shotgun proteomics. J Proteome Res 2012, 11(3):1494-1502.
-- Sheng Q, Wu C, Su Z, Zeng R: SRMBuilder: a user-friendly tool for selected reaction monitoring data analysis. Journal of bioinformatics and computational biology 2011, 9 Suppl 1:51-62.
+- SILAC Quantification : Vukoti K, Yu X, Sheng Q, Saha S, Feng Z, Hsu AL, Miyagi M: Monitoring newly synthesized proteins over the adult life span of Caenorhabditis elegans. J Proteome Res 2015, 14(3):1483-1494.
+- TurboRAW2MGF : Sheng Q, Li R, Dai J, Li Q, Su Z, Guo Y, Li C, Shyr Y, Zeng R: Preprocessing significantly improves the peptide/protein identification sensitivity of high-resolution isobarically labeled tandem mass spectrometry data. Mol Cell Proteomics 2015, 14(2):405-417.
+- O18 Quantification : Guo Y, Miyagi M, Zeng R, Sheng Q: O18Quant: A Semiautomatic Strategy for Quantitative Analysis of High-Resolution 16O/18O Labeled Data. BioMed research international 2014, 2014:971857.
+- BuildSummary : Sheng Q, Dai J, Wu Y, Tang H, Zeng R: BuildSummary: using a group-based approach to improve the sensitivity of peptide/protein identification in shotgun proteomics. J Proteome Res 2012, 11(3):1494-1502.
+- SRMBuilder : Sheng Q, Wu C, Su Z, Zeng R: SRMBuilder: a user-friendly tool for selected reaction monitoring data analysis. Journal of bioinformatics and computational biology 2011, 9 Suppl 1:51-62.
 
 <a name="Changes"/>
 #Changes
+- 2015/09/04 Version 3.9.9
+ 1. Enhanced: SILAC Quantification Summary Viewer 1.1.0: the R sqaure only worked when user click the "Update" button, then the result saved can be displayed properly.
 - 2015/08/24 Version 3.9.8
  1. New feature: MS3 Library Builder / MS3 SAP Predictor : predict single aminoacid polymorphism using MS2/MS3 data.
 - 2015/08/06 Version 3.9.7
