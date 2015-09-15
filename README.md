@@ -60,6 +60,8 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2015/09/15 Version 4.0.0
+ 1. Enhanced: MS3 SAP Predictor 1.0.1: allow N-terminal loss in prediction.
 - 2015/09/04 Version 3.9.9
  1. Enhanced: SILAC Quantification Summary Viewer 1.1.0: the R sqaure only worked when user click the "Update" button, then the result saved can be displayed properly.
 - 2015/08/24 Version 3.9.8
