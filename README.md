@@ -60,6 +60,8 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2015/09/17 Version 4.0.1
+ 1. Enhanced: MS3 Library Builder/MS2 SAP Predictor 1.0.2: allow C-terminal loss in prediction, output interval data.
 - 2015/09/15 Version 4.0.0
  1. Enhanced: MS3 SAP Predictor 1.0.1: allow N-terminal loss in prediction.
 - 2015/09/04 Version 3.9.9
