@@ -10,6 +10,7 @@ using ProteomicsTools;
 using RCPA.Tools.Summary;
 using RCPA.Proteomics.Summary;
 using RCPA.Proteomics.Format;
+using RCPA.Proteomics.Mascot;
 
 namespace CQS
 {
@@ -30,7 +31,8 @@ namespace CQS
       {
         new UniformSummaryBuilderUI.Command(),
         new PeptideSpectrumMatchDistillerCommand(),
-        new Mgf2Ms2ConverterCommand()
+        new Mgf2Ms2ConverterCommand(),
+        new MascotGenericFormatShiftPrecursorProcessorCommand()
       }.ToDictionary(m => m.Name.ToLower());
 
       if (!SystemUtils.IsLinux && args.Length == 0)

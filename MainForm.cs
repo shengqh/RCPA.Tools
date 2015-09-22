@@ -224,7 +224,6 @@ namespace ProteomicsTools
       //Mascot
       AddCommand(new MascotResultHtmlDownloaderCommand(false));
       AddCommand(new MascotResultHtml2TextProcessorCommand());
-      AddCommand(new TurboMascotGenericFormatShift10ProcessorUI.Command());
       AddCommand(new MascotGenericFormatSplitterUI.Command());
 
       AddCommand(new ToolCommandSeparator(MenuCommandType.Mascot));

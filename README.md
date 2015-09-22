@@ -60,6 +60,10 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2015/09/22 Version 4.0.3
+ 1. Enhanced: MS3 Library Builder/MS2 SAP Predictor 1.0.3: consider modification at terminal loss, add options for max terminal loss and min terminal lossed sequence length.
+- 2015/09/18 Version 4.0.2
+ 1. Enhanced: BuildSummary 7.1.7: filter single wonder by spectrum count for SimpleProtein/Peptide/UniquePeptide FDR mode, filter spectra with maximum miss cleavage sites (default 2).
 - 2015/09/17 Version 4.0.1
  1. Enhanced: MS3 Library Builder/MS2 SAP Predictor 1.0.2: allow C-terminal loss in prediction, output interval data.
 - 2015/09/15 Version 4.0.0
