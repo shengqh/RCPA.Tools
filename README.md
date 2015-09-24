@@ -60,6 +60,8 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2015/09/24 Version 4.0.4
+ 1. Enhanced: MS3 Library Builder/MS2 SAP Predictor 1.0.4: output library ms2 score, expect value and proteins.
 - 2015/09/22 Version 4.0.3
  1. Enhanced: MS3 Library Builder/MS2 SAP Predictor 1.0.3: consider modification at terminal loss, add options for max terminal loss and min terminal lossed sequence length.
 - 2015/09/18 Version 4.0.2
