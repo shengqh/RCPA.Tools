@@ -60,6 +60,8 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2015/10/01 Version 4.0.5
+ 1. Bugfix: Mascot Generic Format File Precursor Shifting Precessor 1.2.0: add unnecessary (hydrogen mass * precursor charge) to the shift mass in previous version. Now fixed.
 - 2015/09/24 Version 4.0.4
  1. Enhanced: MS3 Library Builder/MS2 SAP Predictor 1.0.4: output library ms2 score, expect value and proteins.
 - 2015/09/22 Version 4.0.3
