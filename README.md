@@ -60,6 +60,10 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2015/10/12 Version 4.0.6
+ 1. Enhanced: Multiple Raw To MGF: add overwrite option.
+ 2. Enhanced: Silac Quantification Summary Viewer 1.2.0: Filter protein and peptide by correlation seprately.
+ 3. Enhanced: BuildSummary speed up and support target-decoy-spectrum searching strategy.
 - 2015/10/01 Version 4.0.5
  1. Bugfix: Mascot Generic Format File Precursor Shifting Precessor 1.2.0: add unnecessary (hydrogen mass * precursor charge) to the shift mass in previous version. Now fixed.
 - 2015/09/24 Version 4.0.4

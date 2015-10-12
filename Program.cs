@@ -53,6 +53,8 @@ namespace CQS
       }
       else
       {
+        Console.WriteLine("Current system = " + SystemUtils.CurrentSystem.ToString());
+
         if (!SystemUtils.IsLinux)
         {
           AttachConsole(AttachParentProcess);
