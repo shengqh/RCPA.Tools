@@ -64,8 +64,6 @@ namespace ProteomicsTools
 
       AddCommand(new ToolCommandSeparator(MenuCommandType.Summary));
 
-      AddCommand(new BuildSummaryResultParserUI.Command());
-
       AddCommand(new BatchUniformIdentifiedResultBuilderUI.Command());
 
       //Format

@@ -60,6 +60,10 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2015/11/11 Version 4.0.8
+ 1. Enhanced: MS3 Library Builder/MS3 Peptide Variants Interpreter 1.0.6
+- 2015/10/14 Version 4.0.7
+ 1. Enhanced: BuildSummary 7.1.8： support to group spectrum by protein tag for FDR estimation.
 - 2015/10/12 Version 4.0.6
  1. Enhanced: Multiple Raw To MGF: add overwrite option.
  2. Enhanced: Silac Quantification Summary Viewer 1.2.0: Filter protein and peptide by correlation seprately.
