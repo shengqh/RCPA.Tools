@@ -309,7 +309,7 @@ namespace ProteomicsTools
       AddCommand(new MascotDatToPepXmlConverterUI.Command());
 
       //Help
-      AddCommand(new HelpCommand());
+      AddCommand(new AboutCommand());
 
       LoadOption();
     }

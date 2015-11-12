@@ -16,7 +16,7 @@ ProteomicsTools Software Suite
 
 ProteomicsTools software suite contains a bunch of tools used in proteomics research, from identification result parsing to quantification, modification, et. al.
 
-Currently, there are three major softwares with full documents:
+Currently, there are few major softwares with full documents, please cite corresponding paper if you use ProteomicsTools in your project:
 
 <a name="BuildSummary"/>
 - **BuildSummary** [[Full documents](https://github.com/shengqh/RCPA.Tools/wiki/BuildSummary)] : The target-decoy database search strategy is widely accepted as a standard method for estimating the false discovery rate (FDR) of peptide identification, based on which peptide-spectrum matches (PSMs) from the target database are filtered. To improve the sensitivity of protein identification given a fixed accuracy (frequently defined by a protein FDR threshold), a post-processing procedure is often used that integrates results from different peptide search engines that had assayed the same dataset. In this work, we show that PSMs that are grouped by the precursor charge, the number of missed internal cleavage sites, the modification state, the numbers of protease termini and the proteins grouped by their unique peptide count should be filtered separately according to the given FDR. We also develop an iterative procedure to filter the PSMs and proteins simultaneously, according to the given FDR. Finally, we present a general framework to integrate the results from different peptide search engines using the same FDR threshold. Our method was tested with several shotgun proteomics datasets that were acquired by multiple LC/MS instruments from two different biological samples. The results showed a satisfactory performance. 
@@ -62,6 +62,7 @@ The c# source code is also provided at following repositories. Visual Studio 201
 #Changes
 - 2015/11/11 Version 4.0.8
  1. Enhanced: MS3 Library Builder/MS3 Peptide Variants Interpreter 1.0.6
+ 2. Enhanced: Add about page with homepage and email links.
 - 2015/10/14 Version 4.0.7
  1. Enhanced: BuildSummary 7.1.8： support to group spectrum by protein tag for FDR estimation.
 - 2015/10/12 Version 4.0.6
