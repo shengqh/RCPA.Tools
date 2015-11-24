@@ -60,6 +60,8 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2015/11/23 Version 4.0.10
+ 1. Bugfix: MS3 Peptide Variants Interpreter 1.0.8, SingleAminoacidPolymorphism is saved with error format in fasta file
 - 2015/11/12 Version 4.0.9
  1. Enhanced: MS3 Library Builder/MS3 Peptide Variants Interpreter 1.0.7, restore excluding peptide file as optional parameter.
 - 2015/11/11 Version 4.0.8
