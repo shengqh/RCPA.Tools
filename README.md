@@ -60,6 +60,8 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2016/01/14 Version 4.0.11
+ 1. Bugfix: Reversed database builder, error when no contamination file assigned.
 - 2015/11/23 Version 4.0.10
  1. Bugfix: MS3 Peptide Variants Interpreter 1.0.8, SingleAminoacidPolymorphism is saved with error format in fasta file
 - 2015/11/12 Version 4.0.9
