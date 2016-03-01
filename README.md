@@ -60,6 +60,8 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2016/03/01 Version 4.0.12
+ 1. New feature: Deuterium Calculator.
 - 2016/01/14 Version 4.0.11
  1. Bugfix: Reversed database builder, error when no contamination file assigned.
 - 2015/11/23 Version 4.0.10

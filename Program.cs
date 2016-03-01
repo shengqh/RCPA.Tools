@@ -12,6 +12,7 @@ using RCPA.Proteomics.Summary;
 using RCPA.Proteomics.Format;
 using RCPA.Proteomics.Mascot;
 using RCPA.Proteomics.Statistic;
+using RCPA.Proteomics.Deuterium;
 
 namespace CQS
 {
@@ -34,7 +35,8 @@ namespace CQS
         new PeptideSpectrumMatchDistillerCommand(),
         new Mgf2Ms2ConverterCommand(),
         new MascotGenericFormatShiftPrecursorProcessorCommand(),
-        new BuildSummaryResultParserCommand()
+        new BuildSummaryResultParserCommand(),
+        new DeuteriumCalculatorUI.Command()
       }.ToDictionary(m => m.Name.ToLower());
 
       if (!SystemUtils.IsLinux && args.Length == 0)

@@ -150,7 +150,7 @@ namespace ProteomicsTools
       //AddCommand(new ExtendSilacQuantificationSummaryViewerUI.Command());
 
       AddCommand(new ProteinLabelFreeQuantificationBuilderUI.Command());
-      AddCommand(new ProteinChromotographProcessorUI.Command());
+      AddCommand(new ProteinChromatographProcessorUI.Command());
       AddCommand(new ToolCommandSeparator(MenuCommandType.Quantification));
 
       AddCommand(new DtaselectFileSplitterCommand());
@@ -201,7 +201,7 @@ namespace ProteomicsTools
       //AddCommand(new ToolCommandSeparator(MenuCommandType.Quantification));
       AddCommand(new ForwardReverseRatioCalibratorUI.Command());
 
-      AddCommand(new ProteinChromotographViewer.Command());
+      AddCommand(new ProteinChromatographViewer.Command());
 
       //Statistic
       AddCommand(new ProteinDistributionUI.Command());

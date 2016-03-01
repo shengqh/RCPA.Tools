@@ -184,6 +184,14 @@
       <Link>template\PeptideQuantification.r</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="..\RCPA.Proteomics\template\ProfileChroBoundary.r">
+      <Link>template\ProfileChroBoundary.r</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\RCPA.Proteomics\template\ProfileChroDeuterium.r">
+      <Link>template\ProfileChroDeuterium.r</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="..\RCPA.Proteomics\template\ProteinQuantification.r">
       <Link>template\ProteinQuantification.r</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
