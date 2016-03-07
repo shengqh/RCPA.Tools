@@ -43,7 +43,7 @@ Two libraries are required for executing the software:
 Both 64bit version and 32bit version are provided in [github](https://github.com/shengqh/RCPA.Tools/releases). Download the file and decompress it to any folder you want, run ProteomicsTools.exe and have fun.
 
 ###Source
-The c# source code is also provided at following repositories. Visual Studio 2012 is recommended for compilation.
+The c# source code is also provided at following repositories. Visual Studio 2015 is recommended for compilation.
 
 - [SQH.Lib](https://github.com/shengqh/SQH.Lib/) : Third part C# libraries required by other modules.
 - [RCPA.Core](https://github.com/shengqh/RCPA.Core/) : Core library of GUI and utilities.
@@ -60,6 +60,8 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2016/03/07 Version 4.0.13
+ 1. Enhanced: Deuterium Calculator. Updated the R code for calculation which will install packages properly.
 - 2016/03/01 Version 4.0.12
  1. New feature: Deuterium Calculator.
 - 2016/01/14 Version 4.0.11
