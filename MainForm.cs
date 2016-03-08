@@ -298,15 +298,15 @@ namespace ProteomicsTools
       //20131113
       AddCommand(new RawScanParentChildDistillerUI.Command());
 
-      //Setup
-      AddCommand(new ExternalProgramConfigUI.Command());
-
       AddCommand(new ToolCommandSeparator(MenuCommandType.Misc));
       AddCommand(new AminoacidInsertionBuilderUI.Command());
 
       AddCommand(new UpdatePepXmlModificationProcessorUI.Command());
 
       AddCommand(new MascotDatToPepXmlConverterUI.Command());
+
+      //Setup
+      AddCommand(new ExternalProgramConfigUI.Command());
 
       //Help
       AddCommand(new AboutCommand());
