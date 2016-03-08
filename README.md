@@ -60,6 +60,8 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2016/03/08 Version 4.0.14
+ 1. Enhanced: Deuterium Calculator. Throw exception when R is not found in system registration.
 - 2016/03/07 Version 4.0.13
  1. Enhanced: Deuterium Calculator. Updated the R code for calculation which will install packages properly.
 - 2016/03/01 Version 4.0.12
