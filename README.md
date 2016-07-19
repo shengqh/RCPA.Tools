@@ -60,6 +60,8 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2016/07/19 Version 4.0.15
+ 1. Bug fix: Deuterium Calculator. Support the new label free quantification format.
 - 2016/03/08 Version 4.0.14
  1. Enhanced: Deuterium Calculator. Throw exception when R is not found in system registration.
 - 2016/03/07 Version 4.0.13
