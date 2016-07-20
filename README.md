@@ -60,6 +60,8 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2016/07/20 Version 4.0.16
+ 1. Enhanced: Deuterium Calculator. Add option for calculate number of deuterium using different formula.
 - 2016/07/19 Version 4.0.15
  1. Bug fix: Deuterium Calculator. Support the new label free quantification format.
 - 2016/03/08 Version 4.0.14
