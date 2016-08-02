@@ -60,8 +60,10 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2016/07/26 Version 4.0.18
+ 1. Enhanced: Deuterium Calculator. Support both peptide and protein level calculation based on time point definition. Median value will be used for each time point.
 - 2016/07/26 Version 4.0.17
- 1. Enhanced: Deuterium Calculator. Report theoretical enrichment of deuterium, observed enrichment of deuterium and number of deuterium incoporated in final result. Move intermediate result into detail directory.
+ 1. Enhanced: Deuterium Calculator. Report theoretical enrichment of deuterium, observed enrichment of deuterium and number of deuterium incorporated in final result. Move intermediate result into detail directory.
 - 2016/07/20 Version 4.0.16
  1. Enhanced: Deuterium Calculator. Add option for calculate number of deuterium using different formula.
 - 2016/07/19 Version 4.0.15
