@@ -5,6 +5,7 @@ ProteomicsTools Software Suite
   * [SRMBuilder](#SRMBuilder) [[Full documents](https://github.com/shengqh/RCPA.Tools/wiki/SRMBuilder)]
   * [O18Quant](#O18Quant) [[Full documents](https://github.com/shengqh/RCPA.Tools/wiki/O18Quant)]
   * [TurboRaw2MGF](#TurboRaw2MGF) [[Full documents](https://github.com/shengqh/RCPA.Tools/wiki/TurboRaw2MGF)]
+	* [DeuteriumCalculator](#DeuteriumCalculator) [[Full documents](https://github.com/shengqh/RCPA.Tools/wiki/DeuteriumCalculator)] 
   * [Isobaric Labeling Quantification Suite](https://github.com/shengqh/RCPA.Tools/wiki/IsobaricQuant)
 * [Prerequisites](#Prerequisites)
 * [Installation](#Installation)
@@ -30,6 +31,9 @@ With high sensitivity and reproducibility, selected reaction monitoring (SRM) ha
 
 <a name="TurboRaw2MGF" />
 - **TurboRaw2MGF** [[Full documents](https://github.com/shengqh/RCPA.Tools/wiki/TurboRaw2MGF)] : Isobaric labelling technique coupled with high resolution mass spectrometry has been widely employed in proteomic workflows requiring relative quantification. For each high resolution tandem mass spectrum (MS/MS), it can be used not only to quantify the peptide from different samples by reporter ions，but also to identify the peptide it derived from. Since the ions related to isobaric labeling may act as noise in database searching, the MS/MS spectrum should be preprocessed before peptide/protein identification. In this paper, we demonstrate that there are a lot of high frequency, high abundance isobaric related ions in MS/MS spectrum, and combining removing isobaric related ions with deisotoping and deconvolution in MS/MS preprocessing procedure improves the peptide/protein identification sensitivity significantly. 
+
+<a name="DeuteriumCalculator" />
+- **DeuteriumCalculator** [[Full documents](https://github.com/shengqh/RCPA.Tools/wiki/DeuteriumCalculator)] : An user-friendly software for deuterium enrichment analysis based on high resolution mass spectrometry data. 
 
 <a name="Prerequisites" />
 #Prerequisites
