@@ -161,6 +161,10 @@
     <None Include="..\RCPA.Proteomics\template\DetectSignificantIon.r">
       <Link>template\DetectSignificantIon.r</Link>
     </None>
+    <None Include="..\RCPA.Proteomics\template\DeuteriumKinetic.r">
+      <Link>template\DeuteriumKinetic.r</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="..\RCPA.Proteomics\template\MultiplePairQuantification.r">
       <Link>template\MultiplePairQuantification.r</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

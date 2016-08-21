@@ -33,7 +33,10 @@ With high sensitivity and reproducibility, selected reaction monitoring (SRM) ha
 - **TurboRaw2MGF** [[Full documents](https://github.com/shengqh/RCPA.Tools/wiki/TurboRaw2MGF)] : Isobaric labelling technique coupled with high resolution mass spectrometry has been widely employed in proteomic workflows requiring relative quantification. For each high resolution tandem mass spectrum (MS/MS), it can be used not only to quantify the peptide from different samples by reporter ions，but also to identify the peptide it derived from. Since the ions related to isobaric labeling may act as noise in database searching, the MS/MS spectrum should be preprocessed before peptide/protein identification. In this paper, we demonstrate that there are a lot of high frequency, high abundance isobaric related ions in MS/MS spectrum, and combining removing isobaric related ions with deisotoping and deconvolution in MS/MS preprocessing procedure improves the peptide/protein identification sensitivity significantly. 
 
 <a name="DeuteriumCalculator" />
-- **DeuteriumCalculator** [[Full documents](https://github.com/shengqh/RCPA.Tools/wiki/DeuteriumCalculator)] : An user-friendly software for deuterium enrichment analysis based on high resolution mass spectrometry data. 
+- **DeuteriumCalculator** [[Full documents](https://github.com/shengqh/RCPA.Tools/wiki/DeuteriumCalculator)] : A promising strategy that is available for quantifying rates of protein synthesis is the administration of heavy water (deuterium oxide, D2O) to living organisms. In this strategy, mass spectrometry is used to monitor the kinetics of deuterium incorporation into the newly synthesized protein molecules, and the kinetics of deuterium enrichment are calculated over a time-course experiment. Currently, however, there are few freely available software for deuterium enrichment analysis based on high resolution mass spectrometry data.
+We have developed a user friendly software, DeuteriumCalculator, that efficiently extracts the chromatograph information of identified peptides from high resolution mass spectrometry data and calculates the extent of deuterium enrichment based on isotopomer distribution. A real data example is given to demonstrate the effectiveness and output format of the software.
+DeuteriumCalculator is designed to facilitate D2O-based protein turnover research by automating the most time-consuming step in the data analysis: calculation of the extent of deuterium enrichment from the mass spectrometry data. DeuteriumCalculator is expected to substantially expedite the process of deuterium enrichment analysis.
+
 
 <a name="Prerequisites" />
 #Prerequisites
@@ -64,6 +67,8 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2016/08/14 Version 4.1.0
+ 1. Enhanced: Deuterium Calculator. Calculate ratio consistant at protein level.
 - 2016/08/02 Version 4.0.18
  1. Enhanced: Deuterium Calculator. Support both peptide and protein level calculation based on time point definition. Median value will be used for each time point.
 - 2016/07/26 Version 4.0.17
