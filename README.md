@@ -67,6 +67,8 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2017/02/07 Version 4.1.1
+ 1. Bugfix: Error when parsing MASCOT dat file with DECOY database but no DECOY hits.
 - 2016/08/14 Version 4.1.0
  1. Enhanced: Deuterium Calculator. Calculate ratio consistant at protein level.
 - 2016/08/02 Version 4.0.18
