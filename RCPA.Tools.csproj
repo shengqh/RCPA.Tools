@@ -160,10 +160,11 @@
     </None>
     <None Include="..\RCPA.Proteomics\template\DetectSignificantIon.r">
       <Link>template\DetectSignificantIon.r</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\RCPA.Proteomics\template\DeuteriumKinetic.r">
       <Link>template\DeuteriumKinetic.r</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\RCPA.Proteomics\template\MultiplePairQuantification.r">
       <Link>template\MultiplePairQuantification.r</Link>
@@ -179,11 +180,11 @@
     </None>
     <None Include="..\RCPA.Proteomics\template\ProfileChroBoundary.r">
       <Link>template\ProfileChroBoundary.r</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\RCPA.Proteomics\template\ProfileChroDeuterium.r">
       <Link>template\ProfileChroDeuterium.r</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\RCPA.Proteomics\template\ProfileChroLabelfree.r">
       <Link>template\ProfileChroLabelfree.r</Link>
@@ -195,9 +196,11 @@
     </None>
     <None Include="..\RCPA.Proteomics\template\QuantificationMedian.r">
       <Link>template\QuantificationMedian.r</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\RCPA.Proteomics\template\QuantificationSum.r">
       <Link>template\QuantificationSum.r</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\RCPA.Test\data\itraq-4plex.csv">
       <Link>itraq-4plex.csv</Link>
