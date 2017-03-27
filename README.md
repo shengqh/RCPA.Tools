@@ -67,6 +67,10 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2017/03/27 Version 4.1.5
+ 1. New feature: BuildSummary compatible with MSFlagger search engine (previous X!Tandem pepXML format).
+- 2017/03/25 Version 4.1.4
+ 1. Enhance: BuildSummary compatible with X!Tandem pepXML format.
 - 2017/02/14 Version 4.1.3
  1. Bugfix: ProfileChroBoundary.r error due to NA value in max function.
 - 2017/02/13 Version 4.1.2
