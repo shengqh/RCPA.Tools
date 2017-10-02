@@ -63,12 +63,18 @@ The c# source code is also provided at following repositories. Visual Studio 201
 - TurboRAW2MGF : Sheng Q, Li R, Dai J, Li Q, Su Z, Guo Y, Li C, Shyr Y, Zeng R: Preprocessing significantly improves the peptide/protein identification sensitivity of high-resolution isobarically labeled tandem mass spectrometry data. Mol Cell Proteomics 2015, 14(2):405-417.
 - O18 Quantification : Guo Y, Miyagi M, Zeng R, Sheng Q: O18Quant: A Semiautomatic Strategy for Quantitative Analysis of High-Resolution 16O/18O Labeled Data. BioMed research international 2014, 2014:971857.
 - BuildSummary : Sheng Q, Dai J, Wu Y, Tang H, Zeng R: BuildSummary: using a group-based approach to improve the sensitivity of peptide/protein identification in shotgun proteomics. J Proteome Res 2012, 11(3):1494-1502.
+- Peptide retreival: Tu C, Shen S, Sheng Q, Shyr Y, Qu J: A peptide-retrieval strategy enables significant improvement of quantitative performance without compromising confidence of identification. J Proteomics 2017, 152:276-282.
 - SRMBuilder : Sheng Q, Wu C, Su Z, Zeng R: SRMBuilder: a user-friendly tool for selected reaction monitoring data analysis. Journal of bioinformatics and computational biology 2011, 9 Suppl 1:51-62.
 
 <a name="Changes"/>
 #Changes
+- 2017/09/28 Version 4.1.7
+ 1. Enhanced: Output 4 digits for ms1 retention time.
+- 2017/08/08 Version 4.1.6
+ 1. Enhanced: Implement peptide retreival function in BuildSummary.
+ 2. Bugfix: O18 quantification throw exception of error format.
 - 2017/03/27 Version 4.1.5
- 1. New feature: BuildSummary compatible with MSFlagger search engine (previous X!Tandem pepXML format).
+ 1. New feature: BuildSummary compatible with MSFlagger search engine.
 - 2017/03/25 Version 4.1.4
  1. Enhance: BuildSummary compatible with X!Tandem pepXML format.
 - 2017/02/14 Version 4.1.3
