@@ -39,7 +39,8 @@ namespace CQS
         new MascotGenericFormatShiftPrecursorProcessorCommand(),
         new BuildSummaryResultParserCommand(),
         new DeuteriumCalculatorUI.Command(),
-        new ChromatographProfileBuilderUI.Command()
+        new ChromatographProfileBuilderUI.Command(),
+        new MultipleRaw2MgfCommand()
       }.ToDictionary(m => m.Name.ToLower());
 
       SoftwareInfo.SoftwareName = RcpaToolsAssembly.Name;
@@ -63,13 +64,12 @@ namespace CQS
       }
       else
       {
-        Console.WriteLine("Current system = " + SystemUtils.CurrentSystem.ToString());
-
         if (!SystemUtils.IsLinux)
         {
           AttachConsole(AttachParentProcess);
         }
 
+        Console.WriteLine("Current system = " + SystemUtils.CurrentSystem.ToString());
         ICommandLineCommand command;
         if (args.Length == 0)
         {
@@ -84,7 +84,10 @@ namespace CQS
         }
         else
         {
-          Console.WriteLine("Error command " + args[0] + ".");
+          if (!args[0].Equals("-h") && !args[0].Equals("--help"))
+          {
+            Console.WriteLine("Error command " + args[0] + ".");
+          }
           ShowUsage(commands);
         }
       }

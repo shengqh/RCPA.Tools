@@ -68,6 +68,10 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2017/10/19 Version 4.1.9
+ 1. Enhanced: Support command line for TurboRaw2MGF.
+- 2017/09/28 Version 4.1.8
+ 1. Bugfix: SILAC quantification throw exception.
 - 2017/09/28 Version 4.1.7
  1. Enhanced: Output 4 digits for ms1 retention time.
 - 2017/08/08 Version 4.1.6
