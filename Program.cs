@@ -15,6 +15,7 @@ using RCPA.Proteomics.Statistic;
 using RCPA.Proteomics.Deuterium;
 using RCPA.Proteomics.Quantification.Labelfree;
 using RCPA;
+using RCPA.Proteomics.Database;
 
 namespace CQS
 {
@@ -40,7 +41,8 @@ namespace CQS
         new BuildSummaryResultParserCommand(),
         new DeuteriumCalculatorUI.Command(),
         new ChromatographProfileBuilderUI.Command(),
-        new MultipleRaw2MgfCommand()
+        new MultipleRaw2MgfCommand(),
+        new ReversedDatabaseBuilderCommand()
       }.ToDictionary(m => m.Name.ToLower());
 
       SoftwareInfo.SoftwareName = RcpaToolsAssembly.Name;

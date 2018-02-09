@@ -69,6 +69,7 @@ namespace ProteomicsTools
       //Format
       //20110306, 1.0.0
       AddCommand(new MultipleRaw2MgfProcessorUI.Command());
+      AddCommand(new MultipleRaw2MSnProcessorUI.Command());
 
       AddCommand(new ToolCommandSeparator(MenuCommandType.Format));
 

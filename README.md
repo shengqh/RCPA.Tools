@@ -68,6 +68,10 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2018/02/09 Version 4.1.11
+ 1. Enhanced: Read through the broken RAW file for data convertion.
+- 2018/01/31 Version 4.1.10
+ 1. New feature: Multiple RAW to MSn processor.
 - 2017/10/19 Version 4.1.9
  1. Enhanced: Support command line for TurboRaw2MGF.
 - 2017/09/28 Version 4.1.8
