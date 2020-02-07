@@ -68,6 +68,8 @@ The c# source code is also provided at following repositories. Visual Studio 201
 
 <a name="Changes"/>
 #Changes
+- 2020/02/02 Version 4.1.12
+ 1. Enhanced: Compatible with mono 6.
 - 2018/02/09 Version 4.1.11
  1. Enhanced: Read through the broken RAW file for data convertion.
 - 2018/01/31 Version 4.1.10
