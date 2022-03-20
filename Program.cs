@@ -1,21 +1,21 @@
+using ProteomicsTools;
+using RCPA;
+using RCPA.Commandline;
+using RCPA.Gui.Command;
+using RCPA.Proteomics.Database;
+using RCPA.Proteomics.Deuterium;
+using RCPA.Proteomics.Format;
+using RCPA.Proteomics.Mascot;
+using RCPA.Proteomics.Quantification.Labelfree;
+using RCPA.Proteomics.Statistic;
+using RCPA.Proteomics.Summary;
+using RCPA.Tools.Summary;
+using RCPA.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using RCPA.Gui.Command;
-using RCPA.Utils;
-using RCPA.Commandline;
-using ProteomicsTools;
-using RCPA.Tools.Summary;
-using RCPA.Proteomics.Summary;
-using RCPA.Proteomics.Format;
-using RCPA.Proteomics.Mascot;
-using RCPA.Proteomics.Statistic;
-using RCPA.Proteomics.Deuterium;
-using RCPA.Proteomics.Quantification.Labelfree;
-using RCPA;
-using RCPA.Proteomics.Database;
 
 namespace CQS
 {
